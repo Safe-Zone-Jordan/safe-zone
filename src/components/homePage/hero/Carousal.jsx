@@ -14,35 +14,39 @@ export default function Carousal() {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
-                    src="images/slide/volunteer-helping-with-donation-box.jpg"
+                    // src="images/slide/volunteer-helping-with-donation-box.jpg"
+                    src="images/slide/low-current-placeHolder-1.jpg"
+
                     className="carousel-image img-fluid"
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                    <h1>be a Kind Heart</h1>
-                    <p>Professional charity theme based on Bootstrap 5.2.2</p>
+                    <h1>Build Systems</h1>
+                    <p>Professional at What We Do</p>
                   </div>
                 </div>
                 <div className="carousel-item">
                   <img
-                    src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
+                    // src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
+                    src="images/slide/low-current-placeHolder-2.jpg"
                     className="carousel-image img-fluid"
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                    <h1>Non-profit</h1>
-                    <p>You can support us to grow more</p>
+                    <h1>Customize your Systems</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur </p>
                   </div>
                 </div>
                 <div className="carousel-item">
                   <img
-                    src="images/slide/medium-shot-people-collecting-donations.jpg"
+                    // src="images/slide/medium-shot-people-collecting-donations.jpg"
+                    src="images/slide/low-current-placeHolder-3.jpg"
                     className="carousel-image img-fluid"
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                    <h1>Humanity</h1>
-                    <p>Please tell your friends about our website</p>
+                  <h1>Modify and Shine</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur </p>
                   </div>
                 </div>
               </div>

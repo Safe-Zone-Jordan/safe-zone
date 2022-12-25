@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function AboutUs() {
+export default function LowCurrent() {
   return (
     <>
     <br /><br /><br /><br /><br /><br />
-    <div>Who we are, meet our team</div>
+    <div>List our Low Current Services here</div>
     </>
   )
 }

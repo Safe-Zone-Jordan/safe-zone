@@ -1,20 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="index.html">
+        <Link className="navbar-brand" to="/">
           <img
-            src="images/logo.png"
+            src="images/SafeLogo.png"
+            style={{ width: "50px", height: "50px" , paddingRight:"10px"}}
             className="logo img-fluid"
             alt="Kind Heart Charity"
           />
           <span>
-            Kind Heart Charity
-            <small>Non-profit Organization</small>
+            Safe Zone
+            <small>For Engineering and Trading</small>
           </span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,25 +31,11 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link click-scroll" href="#top">
+              <Link className ="nav-link click-scroll" to="/">
                 Home
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link click-scroll" href="#section_2">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link click-scroll" href="#section_3">
-                Causes
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link click-scroll" href="#section_4">
-                Volunteer
-              </a>
-            </li>
+            
             <li className="nav-item dropdown">
               <a
                 className="nav-link click-scroll dropdown-toggle"
@@ -57,36 +45,39 @@ export default function NavBar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                News
+                Sectors
               </a>
               <ul
                 className="dropdown-menu dropdown-menu-light"
                 aria-labelledby="navbarLightDropdownMenuLink"
               >
                 <li>
-                  <a className="dropdown-item" href="news.html">
-                    News Listing
-                  </a>
+                  <Link className="dropdown-item" to="/Low-Current">
+                    Low Current
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="news-detail.html">
-                    News Detail
-                  </a>
+                <Link className="dropdown-item" to="/Medical">
+                    Medical Field
+                  </Link>
                 </li>
               </ul>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link click-scroll" href="#section_6">
-                Contact
-              </a>
+              <Link className="nav-link click-scroll" to="/partners">
+                Partners
+              </Link>
             </li>
-            <li className="nav-item ms-3">
-              <a
-                className="nav-link custom-btn custom-border-btn btn"
-                href="donate.html"
-              >
-                Donate
-              </a>
+            <li className="nav-item">
+              <Link className="nav-link click-scroll" to="/about-us">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link click-scroll" to="/contact-us">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

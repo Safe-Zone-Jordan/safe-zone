@@ -52,12 +52,12 @@ export default function Footer() {
             <p className="text-white d-flex">
               <i className="bi-envelope me-2" />
               <Link to="mailto:info@yourgmail.com" className="site-footer-link">
-                donate@charity.org
+                SafeZone@Gmail.com
               </Link>
             </p>
             <p className="text-white d-flex mt-3">
               <i className="bi-geo-alt me-2" />
-              AkershusstrandLink 20, 0150 Oslo, Norway
+              Jordan, Amman, Abdoon, Malta
             </p>
             <Link to="#" style={aTagStyle} className="custom-btn btn mt-3">
               Get Direction
@@ -70,14 +70,17 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-6 col-md-7 col-12">
               <p className="copyright-text mb-0">
-                Copyright © 2036{" "}
+                Copyright © 2022{" "}
                 <Link to="#" style={aTagStyle}>
-                  Kind Heart
+                  Geeks Dota
                 </Link>{" "}
+                All rights reserved.
+                {/* 
                 Charity Org. Design:{" "}
                 <Link to="https://templatemo.com" target="_blank">
                   TemplateMo
                 </Link>
+                 */}
               </p>
             </div>
             <div className="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
