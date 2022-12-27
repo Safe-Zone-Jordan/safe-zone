@@ -7,6 +7,7 @@ import HomePage from "../../pages/HomePage";
 import NavBar from "../navBar/NavBar";
 import Medical from "../../pages/Medical";
 import LowCurrent from "../../pages/LowCurrent";
+import ServiceFullPage from "../ServiceFullPage";
 
 export default function AppRoutes() {
   return (
@@ -16,7 +17,9 @@ export default function AppRoutes() {
         <Routes>
           <Route path="/about-us/*" element={<AboutUs />} />
           <Route path="/contact-us/*" element={<ContactUs />} />
-          <Route path="/Low-Current/*" element={<LowCurrent />} />
+          <Route path="/Low-Current/:id" element={<ServiceFullPage  />} />
+          <Route path="/Low-Current" element={<LowCurrent />} />
+
           <Route path="/Medical/*" element={<Medical />} />
           <Route path="/Partners/*" element={<ContactUs />} />
           <Route path="/*" element={<HomePage />} />
