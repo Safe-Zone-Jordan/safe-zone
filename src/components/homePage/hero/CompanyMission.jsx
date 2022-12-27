@@ -86,7 +86,7 @@ export default function CompanyMission() {
                     <h5 className="mb-3">Medical Solutions</h5>
                     <p>
                       Orci varius natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus
+                      montes, nascetur ridiculus jasnfjksafnkja aksfj sakfjsajkfb kjbasfkjbsaf
                     </p>
                   </div>
                   <Link to="/Medical" className="custom-btn btn">

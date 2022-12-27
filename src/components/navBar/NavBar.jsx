@@ -10,7 +10,7 @@ export default function NavBar() {
             src="images/SafeLogo.png"
             style={{ width: "50px", height: "50px" , paddingRight:"10px"}}
             className="logo img-fluid"
-            alt="Kind Heart Charity"
+            alt="Logo"
           />
           <span>
             Safe Zone

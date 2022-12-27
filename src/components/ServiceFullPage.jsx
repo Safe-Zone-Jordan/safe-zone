@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 
 export default function ServiceFullPage() {
   const { id } = useParams()
+  console.log(id, "lllllll")
   let data = require('../LowCurrentInfo.json')
   data = data.find((item) => +item.id === +id);
   console.log(data, id)
