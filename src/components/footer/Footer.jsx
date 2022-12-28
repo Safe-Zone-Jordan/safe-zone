@@ -53,7 +53,7 @@ export default function Footer() {
               <a
                 href="tel: 120-240-9600"
                 style={aTagStyle}
-                className="site-footer-link"
+                className="footer-menu-link"
               >
                 120-240-9600
               </a>
@@ -63,7 +63,7 @@ export default function Footer() {
               <a
                 style={aTagStyle}
                 href={`mailto:SafeZone@Gmail.com`}
-                className="site-footer-link"
+                className="footer-menu-link"
               >
                 SafeZone@Gmail.com
               </a>

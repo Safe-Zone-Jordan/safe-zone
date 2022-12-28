@@ -1294,17 +1294,17 @@ blockquote::before {
 }
 
 .footer-menu-item {
-  list-style: none;
-  display: block;
+  list-style: none !important;
+  display: block !important;
 }
 
 .footer-menu-link {
-  font-size: var(--p-font-size);
-  color: var(--white-color);
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  font-size: var(--p-font-size) !important;
+  color: var(--white-color) !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-right: 10px !important;
+  margin-bottom: 5px !important;
 }
 
 /*---------------------------------------
