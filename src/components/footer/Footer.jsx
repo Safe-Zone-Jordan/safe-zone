@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const aTagStyle = {
   textDecoration: "none",
 };
+
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -49,13 +50,18 @@ export default function Footer() {
             <h5 className="site-footer-title mb-3">Contact Information</h5>
             <p className="text-white d-flex mb-2">
               <i className="bi-telephone me-2" />
-              <a href="tel: 120-240-9600" className="site-footer-link">
+              <a
+                href="tel: 120-240-9600"
+                style={aTagStyle}
+                className="site-footer-link"
+              >
                 120-240-9600
               </a>
             </p>
             <p className="text-white d-flex">
               <i className="bi-envelope me-2" />
               <a
+                style={aTagStyle}
                 href={`mailto:SafeZone@Gmail.com`}
                 className="site-footer-link"
               >
@@ -67,7 +73,7 @@ export default function Footer() {
               Jordan, Amman, Abdoon, Malta
             </p>
             <iframe
-            title="Google Map"
+              title="Google Map"
               className="w-screen h-screen z-0 absolute"
               frameborder="0"
               scrolling="no"
@@ -78,10 +84,13 @@ export default function Footer() {
             ></iframe>
 
             {/* <Link to="#" style={aTagStyle} className="custom-btn btn mt-3"> */}
-            <a style={aTagStyle} className="custom-btn btn mt-3" href="http://maps.google.com/?q=amman Abu Nseir Medical Labs, Abu Nuseir St, Amman">
-
+            <a
+              style={aTagStyle}
+              className="custom-btn btn mt-3"
+              href="http://maps.google.com/?q=amman Abu Nseir Medical Labs, Abu Nuseir St, Amman"
+            >
               Get Direction
-              </a>
+            </a>
             {/* </Link> */}
           </div>
         </div>
