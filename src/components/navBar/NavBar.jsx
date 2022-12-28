@@ -7,8 +7,8 @@ export default function NavBar() {
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
-            src="images/SafeLogo.png"
-            style={{ width: "50px", height: "50px" , paddingRight:"10px"}}
+            src="images/newSafeLogo.jpeg"
+            style={{ paddingRight:"10px"}}
             className="logo img-fluid"
             alt="Logo"
           />

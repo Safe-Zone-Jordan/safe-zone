@@ -20,7 +20,7 @@ export default function ServiceCard({ id }) {
               nascetur ridiculus jasnfjksafnkja aksfj sakfjsajkfb kjbasfkjbsaf
             </p>
           </div>
-          <Link to="/Medical" className="custom-btn btn">
+          <Link to={`/Low-Current/${id}`} className="custom-btn btn">
             Check Services
           </Link>
         </div>

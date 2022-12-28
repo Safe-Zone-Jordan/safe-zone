@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import AboutUs from "../about/AboutUs";
 import ContactUs from "../about/ContactUs";
@@ -8,12 +8,15 @@ import NavBar from "../navBar/NavBar";
 import Medical from "../../pages/Medical";
 import LowCurrent from "../../pages/LowCurrent";
 import ServiceFullPage from "../ServiceFullPage";
+import ScrollToTop from "../../ScrollToTop";
 
 export default function AppRoutes() {
+
   return (
     <div className="App">
       <Router>
         <NavBar />
+        <ScrollToTop />
         <Routes>
           <Route path="/about-us/*" element={<AboutUs />} />
           <Route path="/contact-us/*" element={<ContactUs />} />

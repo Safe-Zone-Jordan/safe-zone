@@ -5,7 +5,6 @@ import ServiceCard from '../components/lowCurrent/ServiceCard'
 let data = require('../LowCurrentInfo.json');
 
 export default function LowCurrent() {
-  // const data = require('../LowCurrentInfo.json')
   return (
     <>
         <section className="section-padding">

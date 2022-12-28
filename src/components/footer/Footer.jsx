@@ -9,7 +9,11 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-12 mb-4">
-            <img src="images/logo.png" className="logo img-fluid" alt="" />
+            <img
+              src="images/newSafeLogo.jpeg"
+              className="logo img-fluid"
+              alt=""
+            />
           </div>
           <div className="col-lg-4 col-md-6 col-12 mb-4">
             <h5 className="site-footer-title mb-3">Quick Links</h5>
@@ -42,26 +46,43 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-lg-4 col-md-6 col-12 mx-auto">
-            <h5 className="site-footer-title mb-3">Contact Infomation</h5>
+            <h5 className="site-footer-title mb-3">Contact Information</h5>
             <p className="text-white d-flex mb-2">
               <i className="bi-telephone me-2" />
-              <Link to="tel: 120-240-9600" className="site-footer-link">
+              <a href="tel: 120-240-9600" className="site-footer-link">
                 120-240-9600
-              </Link>
+              </a>
             </p>
             <p className="text-white d-flex">
               <i className="bi-envelope me-2" />
-              <Link to="mailto:info@yourgmail.com" className="site-footer-link">
+              <a
+                href={`mailto:SafeZone@Gmail.com`}
+                className="site-footer-link"
+              >
                 SafeZone@Gmail.com
-              </Link>
+              </a>
             </p>
             <p className="text-white d-flex mt-3">
               <i className="bi-geo-alt me-2" />
               Jordan, Amman, Abdoon, Malta
             </p>
-            <Link to="#" style={aTagStyle} className="custom-btn btn mt-3">
+            <iframe
+            title="Google Map"
+              className="w-screen h-screen z-0 absolute"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?width=1208&amp;height=721&amp;hl=en&amp;q=%20Amman+(ltus)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+
+            {/* <Link to="#" style={aTagStyle} className="custom-btn btn mt-3"> */}
+            <a style={aTagStyle} className="custom-btn btn mt-3" href="http://maps.google.com/?q=amman Abu Nseir Medical Labs, Abu Nuseir St, Amman">
+
               Get Direction
-            </Link>
+              </a>
+            {/* </Link> */}
           </div>
         </div>
       </div>
@@ -89,14 +110,22 @@ export default function Footer() {
                   <Link
                     to="#"
                     style={aTagStyle}
-                    className="social-icon-link bi-twitter"
+                    className="social-icon-link bi-facebook"
                   />
                 </li>
                 <li className="social-icon-item">
                   <Link
                     to="#"
                     style={aTagStyle}
-                    className="social-icon-link bi-facebook"
+                    className="social-icon-link bi-linkedin"
+                  />
+                </li>
+                {/*
+                <li className="social-icon-item">
+                  <Link
+                    to="#"
+                    style={aTagStyle}
+                    className="social-icon-link bi-twitter"
                   />
                 </li>
                 <li className="social-icon-item">
@@ -108,17 +137,11 @@ export default function Footer() {
                 </li>
                 <li className="social-icon-item">
                   <Link
-                    to="#"
-                    style={aTagStyle}
-                    className="social-icon-link bi-linkedin"
-                  />
-                </li>
-                <li className="social-icon-item">
-                  <Link
                     to="https://youtube.com/templatemo"
                     className="social-icon-link bi-youtube"
                   />
                 </li>
+                */}
               </ul>
             </div>
           </div>

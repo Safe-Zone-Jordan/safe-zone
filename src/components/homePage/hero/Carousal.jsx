@@ -15,7 +15,7 @@ export default function Carousal() {
                 <div className="carousel-item active">
                   <img
                     // src="images/slide/volunteer-helping-with-donation-box.jpg"
-                    src="images/slide/low-current-placeHolder-1.jpg"
+                    src="images/slide/low-current-placeHolder-3.jpg"
 
                     className="carousel-image img-fluid"
                     alt="..."
