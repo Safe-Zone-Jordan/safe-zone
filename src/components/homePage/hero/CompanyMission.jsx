@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const cardsContainer = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+};
+
 export default function CompanyMission() {
   return (
     <>
@@ -49,11 +55,10 @@ export default function CompanyMission() {
       <section className="section-padding" id="section_3">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 col-12 text-center mb-4">
+            <div className="col-lg-12 col-12  text-center mb-4">
               <h2>Our Solutions</h2>
             </div>
             <div className="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-              
               <div className="custom-block-wrap">
                 <img
                   src="images/icons/lowCurrent.webp"
@@ -69,7 +74,7 @@ export default function CompanyMission() {
                     </p>
                   </div>
                   <Link to="/Low-Current" className="custom-btn btn">
-                  Check Services
+                    Check Services
                   </Link>
                 </div>
               </div>
@@ -86,7 +91,8 @@ export default function CompanyMission() {
                     <h5 className="mb-3">Medical Solutions</h5>
                     <p>
                       Orci varius natoque penatibus et magnis dis parturient
-                      montes, nascetur ridiculus jasnfjksafnkja aksfj sakfjsajkfb kjbasfkjbsaf
+                      montes, nascetur ridiculus jasnfjksafnkja aksfj
+                      sakfjsajkfb kjbasfkjbsaf
                     </p>
                   </div>
                   <Link to="/Medical" className="custom-btn btn">
