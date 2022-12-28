@@ -8,7 +8,7 @@ export default function NavBar() {
         <Link className="navbar-brand" to="/">
           <img
             src="images/newSafeLogo.jpeg"
-            style={{ paddingRight:"10px"}}
+            style={{ paddingRight: "10px" }}
             className="logo img-fluid"
             alt="Logo"
           />
@@ -31,11 +31,11 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className ="nav-link click-scroll" to="/">
+              <Link className="nav-link click-scroll" to="/HomePage">
                 Home
               </Link>
             </li>
-            
+
             <li className="nav-item dropdown">
               <a
                 className="nav-link click-scroll dropdown-toggle"
@@ -57,7 +57,7 @@ export default function NavBar() {
                   </Link>
                 </li>
                 <li>
-                <Link className="dropdown-item" to="/Medical">
+                  <Link className="dropdown-item" to="/Medical">
                     Medical Field
                   </Link>
                 </li>
