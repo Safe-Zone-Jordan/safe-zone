@@ -70,6 +70,11 @@ export default function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link click-scroll" to="/Clients">
+                Clients
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link click-scroll" to="/about-us">
                 About Us
               </Link>
