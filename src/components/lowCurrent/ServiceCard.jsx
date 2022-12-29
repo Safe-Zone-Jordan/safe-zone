@@ -14,33 +14,17 @@ export default function ServiceCard({ id }) {
         />
         <div className="custom-block">
           <div className="custom-block-body">
-            <h5 className="mb-3">Medical Solutions</h5>
+            <h5 className="mb-3">Service {id}</h5>
             <p>
               Orci varius natoque penatibus et magnis dis parturient montes,
               nascetur ridiculus jasnfjksafnkja aksfj sakfjsajkfb kjbasfkjbsaf
             </p>
           </div>
-          <Link to="/Medical" className="custom-btn btn">
+          <Link to={`/low-current/${id}`} className="custom-btn btn">
             Check Services
           </Link>
         </div>
       </div>
     </div>
-    /* 
-    <div className="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-    <div className="featured-block d-flex justify-content-center align-items-center">
-    <Link to="donate.html" style={aTagStyle} className="d-block">
-    <img
-    src="images/icons/lowCurrent.webp"
-    className="featured-block-image img-fluid"
-    alt=""
-    />
-    <p className="featured-block-text">
-    <strong>Low Current</strong>
-    </p>
-    </Link>
-    </div>
-    </div>
-*/
   );
 }
