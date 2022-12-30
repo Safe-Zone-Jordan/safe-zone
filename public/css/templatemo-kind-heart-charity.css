@@ -35,13 +35,15 @@
 }
 
 /*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
+  CUSTOM PROPERTIES ( VARIABLES )       
+  #d2e9ff      
+  #f0f8ff
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
   --primary-color: #5bc1ac;
   --secondary-color: #5a6f80;
-  --section-bg-color: #f0f8ff;
+  --section-bg-color: #d2e9ff;
   --site-footer-bg-color: #44525d;
   --custom-btn-bg-color: #597081;
   --custom-btn-bg-hover-color: #5bc1ac;

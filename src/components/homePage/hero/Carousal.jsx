@@ -15,8 +15,7 @@ export default function Carousal() {
                 <div className="carousel-item active">
                   <img
                     // src="images/slide/volunteer-helping-with-donation-box.jpg"
-                    src="images/slide/low-current-placeHolder-3.jpg"
-
+                    src="images/slide/low-current-placeHolder-4.jpg"
                     className="carousel-image img-fluid"
                     alt="..."
                   />
@@ -39,13 +38,25 @@ export default function Carousal() {
                 </div>
                 <div className="carousel-item">
                   <img
+                    // src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
+                    src="images/slide/low-current-placeHolder-5.jpg"
+                    className="carousel-image img-fluid"
+                    alt="..."
+                  />
+                  <div className="carousel-caption d-flex flex-column justify-content-end">
+                    <h1>Customize your Systems</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur </p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img
                     // src="images/slide/medium-shot-people-collecting-donations.jpg"
                     src="images/slide/low-current-placeHolder-3.jpg"
                     className="carousel-image img-fluid"
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                  <h1>Modify and Shine</h1>
+                    <h1>Modify and Shine</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur </p>
                   </div>
                 </div>
