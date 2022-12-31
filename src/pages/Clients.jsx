@@ -5,7 +5,6 @@ const clientsLogo = {
   width: "60%",
   height: "60%",
   margin: "auto",
-  height: "auto",
 };
 export default function Clients() {
   return (
@@ -20,7 +19,7 @@ export default function Clients() {
           <div className="col-12">
             <div className="row">
               {clientsData.map((client) => (
-                <div className="col-6 col-md-4 col-lg-3" key={client.id} >
+                <div className="col-6 col-md-4 col-lg-3" key={client.id}>
                   <div style={clientsLogo}>
                     <img
                       className="img-fluid"
