@@ -1,16 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import AboutUs from "../about/AboutUs";
-import ContactUs from "../about/ContactUs";
-import Footer from "../footer/Footer";
-import HomePage from "../../pages/HomePage";
-import NavBar from "../navBar/NavBar";
-import Medical from "../../pages/Medical";
-import LowCurrent from "../../pages/LowCurrent";
-import ServiceFullPage from "../ServiceFullPage";
-import ScrollToTop from "../../ScrollToTop";
-import Partners from "../../pages/Partners";
-import Clients from "../partners/Clients";
+import Footer from "./Footer";
+import HomePage from "../pages/HomePage";
+import NavBar from "./NavBar";
+import Medical from "../pages/Medical";
+import ServiceFullPage from "./ServiceFullPage";
+import ScrollToTop from "../ScrollToTop";
+import Partners from "../pages/Partners";
+import Clients from "../pages/Clients";
+import AboutUs from "../pages/AboutUs";
 
 export default function AppRoutes() {
 
@@ -21,9 +19,7 @@ export default function AppRoutes() {
         <ScrollToTop />
         <Routes>
           <Route path="/about-us/*" element={<AboutUs />} />
-          <Route path="/contact-us/*" element={<ContactUs />} />
           <Route path="/Low-Current/:id" element={<ServiceFullPage  />} />
-          <Route path="/Low-Current" element={<LowCurrent />} />
           <Route path="/Medical/*" element={<Medical />} />
           <Route path="/Partners/*" element={<Partners />} />
           <Route path="/clients/*" element={<Clients />} />

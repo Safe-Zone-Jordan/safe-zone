@@ -5,18 +5,16 @@ export default function NavBar() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
       <div className="container-fluid">
+          <span>
         <Link className="navbar-brand" to="/">
           <img
-            src="images/newSafeLogo.jpeg"
-            style={{ paddingRight: "10px" }}
+            src="images/newSafeLogo.png"
+            style={{ width: "150px" }}
             className="logo img-fluid"
             alt="Logo"
           />
-          <span>
-            Safe Zone
-            <small>For Engineering and Trading</small>
-          </span>
-        </Link>
+                  </Link>
+          </span> 
         <button
           className="navbar-toggler"
           type="button"
@@ -52,8 +50,23 @@ export default function NavBar() {
                 aria-labelledby="navbarLightDropdownMenuLink"
               >
                 <li>
-                  <Link className="dropdown-item" to="/Low-Current">
-                    Low Current
+                  <Link className="dropdown-item" to="/Low-Current/1">
+                  Audio visual
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/Low-Current/2">
+                  Public Address
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/Low-Current/3">
+                  Fire Detection
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/Low-Current/4">
+                  Access Control
                   </Link>
                 </li>
                 <li>
@@ -79,11 +92,13 @@ export default function NavBar() {
                 About Us
               </Link>
             </li>
+            {/*
             <li className="nav-item">
               <Link className="nav-link click-scroll" to="/contact-us">
                 Contact Us
               </Link>
             </li>
+            */}
           </ul>
         </div>
       </div>

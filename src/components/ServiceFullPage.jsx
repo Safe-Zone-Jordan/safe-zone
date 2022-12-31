@@ -1,24 +1,22 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ImageHolder from "./elementor-placeholder-image.jpg";
+import ImageHolder from "../assets/elementor-placeholder-image.jpg";
 
 export default function ServiceFullPage() {
   const { id } = useParams();
-  console.log(id, "lllllll");
-  let data = require("../LowCurrentInfo.json");
+  let data = require("../data/Categories.json");
   data = data.find((item) => +item.id === +id);
-  console.log(data, id);
   return (
     <section className="about-section section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-12 " style={{ textAlign: "center" }}>
-            <img src={ImageHolder} alt="ImageHolder" className="img-fluid" />
+          <div className="col-12">
+            <h1 className="text-center">{data.name}</h1>
           </div>
         </div>
         <div className="row">
-          <div className="col-12">
-            <h1 className="text-center">{data.name}</h1>
+          <div className="col-12 " style={{ textAlign: "center" }}>
+            <img src={ImageHolder} alt="ImageHolder" className="img-fluid" />
           </div>
         </div>
         <div className="row">

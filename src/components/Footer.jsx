@@ -9,9 +9,10 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-12 mb-4">
+          <div className="col-lg-3 col-12 mb-4" >
             <img
-              src="images/newSafeLogo.jpeg"
+              src="images/newLogoUnremv.jpg"
+              style={{ width: "150px"}}
               className="logo img-fluid"
               alt=""
             />
@@ -75,10 +76,10 @@ export default function Footer() {
             <iframe
               title="Google Map"
               className="w-screen h-screen z-0 absolute"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
+              marginHeight="0"
+              marginWidth="0"
               id="gmap_canvas"
               src="https://maps.google.com/maps?width=1208&amp;height=721&amp;hl=en&amp;q=%20Amman+(ltus)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
