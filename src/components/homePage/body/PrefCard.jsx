@@ -1,11 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+function getWindowSize() {
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
+}
 export default function PrefCard() {
+  const size = getWindowSize();
+  console.log(size);
   return (
     <section className="section-padding section-bg" id="section_3">
       <div className="container">
-        <div className="row">
+        {/* <div className="row">
           <div
             style={{ paddingBottom: "50px" }}
             className="col-12  text-center "
@@ -49,28 +55,64 @@ export default function PrefCard() {
               alt=""
             />
           </div>
-          {/* <div className="col-6 col-md-6">
-            <div className="custom-block-wrap">
-              <img
-                src="images/icons/medical.webp"
-                className="custom-block-image img-fluid"
-                alt=""
-              />
-              <div className="custom-block">
-                <div className="custom-block-body">
-                  <h5 className="mb-3">Medical Solutions</h5>
-                  <p>
-                    Orci varius natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus jasnfjksafnkja aksfj sakfjsajkfb
-                    kjbasfkjbsaf
-                  </p>
-                </div>
-                <Link to="/Medical" className="custom-btn btn">
-                  Check Services
-                </Link>
-              </div>
+        </div> */}
+        <div className="row">
+          <div
+            style={{ paddingBottom: "50px" }}
+            className="col-12  text-center "
+          >
+            <h2>Our Solutions</h2>
+          </div>
+          <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+            <img
+              style={{ borderRadius: "5%" }}
+              src="images/icons/medical.webp"
+              alt="Coffe Flavour"
+              className="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div className="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+            <div className="steps__content-width">
+              <h1 className="h2 mb-4">Low Current</h1>
+              <p className="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia totam dolorem quasi! Quis fugiat totam id fuga non
+                distinctio incidunt amet nesciunt itaque, tempore repellat eos
+                natus quo mollitia laborum.
+              </p>
+              <Link to="/Low-Current" className="custom-btn btn">
+                Check Services
+              </Link>
             </div>
-          </div> */}
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
+            <img
+              style={{ borderRadius: "5%" }}
+              src="images/icons/medical.webp"
+              alt="Health Benefits"
+              className="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div className="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+            <div
+              className={`steps__content-width ${size ? "text-center" : ""}`}
+            >
+              <h1 className="h2 mb-4">Low Current</h1>
+              <p className="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia totam dolorem quasi! Quis fugiat totam id fuga non
+                distinctio incidunt amet nesciunt itaque, tempore repellat eos
+                natus quo mollitia laborum.
+              </p>
+              <Link to="/Low-Current" className="custom-btn btn">
+                Check Services
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

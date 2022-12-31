@@ -31,7 +31,7 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link click-scroll" to="/HomePage">
+              <Link className="nav-link click-scroll" to="/">
                 Home
               </Link>
             </li>

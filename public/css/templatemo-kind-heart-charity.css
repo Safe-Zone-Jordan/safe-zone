@@ -59,7 +59,8 @@
   --h4-font-size: 28px;
   --h5-font-size: 24px;
   --h6-font-size: 22px;
-  --p-font-size: 16px;
+  --p-font-size: 20px;
+  --li-font-size: 16px;
   --btn-font-size: 18px;
   --copyright-font-size: 14px;
 
@@ -130,7 +131,8 @@ h6 {
 }
 
 p {
-  color: var(--p-color);
+  /* color: var(--p-color); */
+  color: #000000;
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
 }
@@ -372,7 +374,7 @@ strong {
 .navbar-nav .nav-link {
   display: inline-block;
   color: var(--p-color);
-  font-size: var(--p-font-size);
+  font-size: var(--li-font-size);
   font-weight: var(--font-weight-medium);
   position: relative;
   padding-top: 15px;
@@ -557,7 +559,7 @@ strong {
 }
 
 #hero-slide .carousel-caption {
-  background: var(--white-color);
+  background: #e9ecefc9;
   clip-path: polygon(100% 100%, 100% 150px, 0 100%);
   color: var(--secondary-color);
   top: 1px;

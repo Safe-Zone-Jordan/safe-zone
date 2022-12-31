@@ -7,14 +7,15 @@ export default function CompanyMission() {
       <section className="about-section section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-5 col-12">
+            <div className="col-lg-6 col-md-7 col-12">
               <img
+                style={{ maxWidth: "255px", height: "auto" }}
                 src="images/icons/safeZone.png"
-                className="about-image ms-lg-auto bg-light shadow-lg img-fluid"
+                className="about-image ms-lg-auto bg-light shadow-lg"
                 alt=""
               />
             </div>
-            <div className="col-lg-5 col-md-7 col-12">
+            <div className="col-lg-5 col-md-5 col-12">
               <div className="custom-text-block">
                 <h2 className="mb-0">Safe Zone</h2>
                 <p className="text-muted mb-lg-4 mb-md-4">

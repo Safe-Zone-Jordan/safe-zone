@@ -1,5 +1,5 @@
 import React from "react";
-
+// #e9ecefc9
 export default function Carousal() {
   return (
     <section className="hero-section hero-section-full-height">
