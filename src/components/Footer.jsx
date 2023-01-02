@@ -9,10 +9,10 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-12 mb-4" >
+          <div className="col-lg-3 col-12 mb-4">
             <img
-              src="images/newLogoUnremv.jpg"
-              style={{ width: "150px"}}
+              src="images/newSafeLogo.png"
+              style={{ width: "150px" }}
               className="logo img-fluid"
               alt=""
             />
