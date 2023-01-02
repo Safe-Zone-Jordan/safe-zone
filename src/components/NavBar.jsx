@@ -15,7 +15,9 @@ export default function NavBar() {
 
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
-      <div className="container-fluid">
+      <div className="container-fluid"
+      style={{ padding: windowSize.innerWidth > 768 ? "0px 5%": ''}}
+      >
       <span>
           <>
         {useLocation().pathname !== "/" &&

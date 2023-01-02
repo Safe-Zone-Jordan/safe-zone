@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const aTagStyle = {
   textDecoration: "none",
 };
-
+function getWindowSize() {
+  const {innerWidth, innerHeight} = window;
+  return {innerWidth, innerHeight};
+}
 export default function Footer() {
+  const [windowSize, ] = useState(getWindowSize());
   return (
-    <footer className="site-footer">
-      <div className="container">
+    <footer className="site-footer" >
+      <div className="container" style={{padding: windowSize.innerWidth < 768 ? "0px 10%": '0px'}}>
         <div className="row">
           <div className="col-lg-3 col-12 mb-4">
             <img
@@ -73,9 +77,11 @@ export default function Footer() {
 
             {/* <Link to="#" style={aTagStyle} className="custom-btn btn mt-3"> */}
             <a
-              style={aTagStyle}
+              style={{aTagStyle, display: "block", width: "50%", textAlign: "center" }}
               className="custom-btn btn mt-3"
               href="http://maps.google.com/?q=amman Abu Nseir Medical Labs, Abu Nuseir St, Amman"
+              target="_blank"
+              rel="noreferrer"
             >
               Get Direction
             </a>
