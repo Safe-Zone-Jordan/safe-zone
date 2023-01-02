@@ -6,23 +6,22 @@ export default function AboutUs() {
       <header className="pt-10 text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto">
         <h1 className="display-3 fw-bold mb-3">About us</h1>
         <p className="text-muted lead mb-0">
-          Launched in 2017, Sigma is an online template design tool with a
-          mission to make landing page design accessible to everyone in the
-          world.
+          Launched in 2015, Safe Zone is a leading Low Current System company in Jordan
+
         </p>
       </header>
       <div className="container py-7">
         <div className="col-12 col-md-8 col-lg-6 mx-auto text-center py-4 border-bottom mb-5">
           <div className="my-5 d-none d-md-flex align-items-start justify-content-between">
             <div>
-              <span className="display-3 fw-bold text-primary d-block">12</span>
+              <span className="display-3 fw-bold text-primary d-block">40+</span>
               <span className="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted">
-                Locations
+                Covered Locations
               </span>
             </div>
             <div>
               <span className="display-3 fw-bold text-primary d-block">
-                75K
+                30+
               </span>
               <span className="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted">
                 Customers
@@ -30,7 +29,7 @@ export default function AboutUs() {
             </div>
             <div>
               <span className="display-3 fw-bold text-primary d-block">
-                160
+                10+
               </span>
               <span className="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted">
                 Staff
@@ -46,11 +45,12 @@ export default function AboutUs() {
             </p>
             <h2 className="display-5 fw-bold mb-6">Our story</h2>
             <p>
-              In 2015, one of our founders had an experience with landing pages
-              where he realized that you can’t control your results, but only
-              act on them. This is what inspired him and the other co-founder to
-              build a landing page design tool which helps users build their
-              landing pages.
+            With more than 6 years of experienced, Safe Zone has built a wide
+          reputation of Low Current system professional work. Safe Zone consist
+          of 3 professional Engineers with 9 Professional crews who they can
+          arrange to cover our business core. Safe Zone has accomplished many
+          projects all over Jordan with a worth value of 350k JOD more than 35
+          projects references.
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas

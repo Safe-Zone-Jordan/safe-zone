@@ -1,10 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+function getWindowSize() {
+  const {innerWidth, innerHeight} = window;
+  return {innerWidth, innerHeight};
+}
+
 
 export default function NavBar() {
+  const [windowSize, ] = useState(getWindowSize());
+  let navigate  = useNavigate();
+
+
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
       <div className="container-fluid">
+      <span>
+          <>
+        {useLocation().pathname !== "/" &&
+          windowSize.innerWidth < 768 &&
+          <button onClick={() => navigate(-1)}>Back</button> 
+        }
+        </>
+          </span>
+
           <span>
         <Link className="navbar-brand" to="/">
           <img

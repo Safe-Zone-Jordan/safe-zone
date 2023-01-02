@@ -12,64 +12,51 @@ export default function Footer() {
           <div className="col-lg-3 col-12 mb-4">
             <img
               src="images/newSafeLogo.png"
-              style={{ width: "150px" }}
+              style={{ width: "250px" }}
               className="logo img-fluid"
               alt=""
             />
           </div>
           <div className="col-lg-4 col-md-6 col-12 mb-4">
-            <h5 className="site-footer-title mb-3">Quick Links</h5>
-            <ul className="footer-menu">
-              <li className="footer-menu-item">
-                <Link to="#" style={aTagStyle} className="footer-menu-link">
-                  Our Story
-                </Link>
-              </li>
-              <li className="footer-menu-item">
-                <Link to="#" style={aTagStyle} className="footer-menu-link">
-                  Newsroom
-                </Link>
-              </li>
-              <li className="footer-menu-item">
-                <Link to="#" style={aTagStyle} className="footer-menu-link">
-                  Causes
-                </Link>
-              </li>
-              <li className="footer-menu-item">
-                <Link to="#" style={aTagStyle} className="footer-menu-link">
-                  Become Link volunteer
-                </Link>
-              </li>
-              <li className="footer-menu-item">
-                <Link to="#" style={aTagStyle} className="footer-menu-link">
-                  Partner with us
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-4 col-md-6 col-12 mx-auto">
             <h5 className="site-footer-title mb-3">Contact Information</h5>
             <p className="text-white d-flex mb-2">
-              <i className="bi-telephone me-2" />
+              <i className="bi-whatsapp me-2" />
               <a
-                href="tel: 120-240-9600"
+                href="tel: 00962798809276"
                 style={aTagStyle}
                 className="footer-menu-link"
               >
-                120-240-9600
+                +962 798809276
+              </a>
+            </p>
+
+            <p className="text-white d-flex mt-3">
+              <i className="bi-printer me-2" />
+              Fax: 009626/5235823
+            </p>
+            <p className="text-white d-flex">
+              <i className="bi-envelope me-2" />
+              <a
+                style={aTagStyle}
+                href={`mailto:sales@safezoneco.net`}
+                className="footer-menu-link"
+              >
+                sales@safezoneco.net
               </a>
             </p>
             <p className="text-white d-flex">
               <i className="bi-envelope me-2" />
               <a
                 style={aTagStyle}
-                href={`mailto:SafeZone@Gmail.com`}
+                href={`mailto:contact@safezoneco.net`}
                 className="footer-menu-link"
               >
-                SafeZone@Gmail.com
+                contact@safezoneco.net
               </a>
-            </p>
-            <p className="text-white d-flex mt-3">
+            </p>           
+          </div>
+          <div className="col-lg-4 col-md-6 col-12 mx-auto">
+          <p className="text-white d-flex mt-3">
               <i className="bi-geo-alt me-2" />
               Jordan, Amman, Abdoon, Malta
             </p>
@@ -106,12 +93,6 @@ export default function Footer() {
                   Geeks Dota
                 </Link>{" "}
                 All rights reserved.
-                {/* 
-                Charity Org. Design:{" "}
-                <Link to="https://templatemo.com" target="_blank">
-                  TemplateMo
-                </Link>
-                 */}
               </p>
             </div>
             <div className="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
@@ -130,28 +111,6 @@ export default function Footer() {
                     className="social-icon-link bi-linkedin"
                   />
                 </li>
-                {/*
-                <li className="social-icon-item">
-                  <Link
-                    to="#"
-                    style={aTagStyle}
-                    className="social-icon-link bi-twitter"
-                  />
-                </li>
-                <li className="social-icon-item">
-                  <Link
-                    to="#"
-                    style={aTagStyle}
-                    className="social-icon-link bi-instagram"
-                  />
-                </li>
-                <li className="social-icon-item">
-                  <Link
-                    to="https://youtube.com/templatemo"
-                    className="social-icon-link bi-youtube"
-                  />
-                </li>
-                */}
               </ul>
             </div>
           </div>

@@ -17,28 +17,48 @@ export default function CompanyMission() {
             </div>
             <div className="col-lg-5 col-md-5 col-12">
               <div className="custom-text-block">
-                <h2 className="mb-0">Safe Zone</h2>
+                {/* <h2 className="mb-0">Safe Zone</h2>`  */}
+
                 <p className="text-muted mb-lg-4 mb-md-4">
-                  Co-Founding Partner
+                  <img
+                    src="images/newSafeLogo.png"
+                    style={{ width: "255px" }}
+                    className="logo img-fluid"
+                    alt="Logo"
+                  />
                 </p>
                 <p>
-                  Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg
-                  kohm tokito Professional charity theme based
+                  We continuously strive to be the independent world-class Low
+                  Current systems company and technical service of choice by
+                  delivering safe, efficient, flexible, and technology-enabled
+                  quality services to our customers, with responsibility towards
+                  the environment, the society, and the shareholders.
                 </p>
                 <p>
-                  You are not allowed to redistribute this template ZIP file on
-                  any other template collection website. Please contact
-                  TemplateMo for more information.
+                  We will perpetually grow by investing in our people in order
+                  to develop a distinguished, passionate, dedicated, and highly
+                  competent team.
                 </p>
                 <ul className="social-icon mt-4">
                   <li className="social-icon-item">
-                    <Link to="#" className="social-icon-link bi-twitter" />
+                    <a
+                      href="https://www.facebook.com/safezoneco"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="social-icon-link bi-facebook"
+                    >
+                      {" "}
+                    </a>
                   </li>
                   <li className="social-icon-item">
-                    <Link to="#" className="social-icon-link bi-facebook" />
-                  </li>
-                  <li className="social-icon-item">
-                    <Link to="#" className="social-icon-link bi-instagram" />
+                    <a
+                      href="https://www.instagram.com/safezone979"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="social-icon-link bi-instagram"
+                    >
+                      {" "}
+                    </a>
                   </li>
                 </ul>
               </div>
