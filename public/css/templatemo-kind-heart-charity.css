@@ -399,7 +399,7 @@ strong {
 .dropdown-item {
   display: inline-block;
   color: var(--p-bg-color);
-  font-size: var(--menu-font-size);
+  font-size: var(--li-font-size);
   font-weight: var(--font-weight-medium);
   position: relative;
   padding-top: 10px;
