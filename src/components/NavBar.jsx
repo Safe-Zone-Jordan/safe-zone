@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -12,29 +12,40 @@ const backBtbStyle = {
 };
 
 export default function NavBar() {
-  const [windowSize] = useState(getWindowSize());
+  const [windowSize, setWindowSize] = useState(getWindowSize());
   let navigate = useNavigate();
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
       <div
         className="container-fluid"
-        style={{ padding: windowSize.innerWidth > 768 ? "0px 5%" : "" }}
+        style={{ padding: windowSize.innerWidth > 992 ? "0px 5%" : "" }}
       >
-        {useLocation().pathname !== "/" && windowSize.innerWidth < 768 && (
-          <button
-            onClick={() => navigate(-1)}
-            style={backBtbStyle}
-            type="button"
-            data-bs-target="#hero-slide"
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true">
+         <span>
+        {useLocation().pathname !== "/" && windowSize.innerWidth < 992 &&  (
+              <button
+                onClick={() => navigate(-1)}
+                style={backBtbStyle}
+                type="button"
+                data-bs-target="#hero-slide"
+                data-bs-slide="prev"
+              >
+                   <span className="carousel-control-prev-icon" aria-hidden="true">
               <span className="visually-hidden">Previous</span>
             </span>
-          </button>
+              </button>
         )}
-
+          </span>
         <span>
           <Link className="navbar-brand" to="/">
             <img
@@ -122,13 +133,6 @@ export default function NavBar() {
                 About Us
               </Link>
             </li>
-            {/*
-            <li className="nav-item">
-              <Link className="nav-link click-scroll" to="/contact-us">
-                Contact Us
-              </Link>
-            </li>
-            */}
           </ul>
         </div>
       </div>

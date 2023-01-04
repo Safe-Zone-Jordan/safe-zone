@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function CompanyMission() {
   return (
@@ -17,7 +16,6 @@ export default function CompanyMission() {
             </div>
             <div className="col-lg-5 col-md-5 col-12">
               <div className="custom-text-block">
-                {/* <h2 className="mb-0">Safe Zone</h2>`  */}
 
                 <p className="text-muted mb-lg-4 mb-md-4">
                   <img
