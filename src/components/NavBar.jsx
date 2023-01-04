@@ -13,6 +13,10 @@ const backBtbStyle = {
 
 export default function NavBar() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [open, setOpen] = useState(false);
+
+  const toggle = () => setOpen(!open);
+
   let navigate = useNavigate();
 
   useEffect(() => {
@@ -83,12 +87,15 @@ export default function NavBar() {
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-              >
+                onClick={toggle}
+                >
                 Sectors
               </a>
               <ul
-                className="dropdown-menu dropdown-menu-light"
+                className="dropdown-menu"
                 aria-labelledby="navbarLightDropdownMenuLink"
+                style={{ display: open ? "block":"" }}
+              
               >
                 <li>
                   <Link className="dropdown-item" to="/Low-Current/1">

@@ -1421,7 +1421,7 @@ blockquote::before {
   }
 
   .dropdown:hover .dropdown-menu {
-    display: block;
+    /* display: block; */
     position: relative;
     margin-top: 5px;
     margin-bottom: 20px;
