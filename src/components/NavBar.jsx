@@ -3,40 +3,48 @@ import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function getWindowSize() {
-  const {innerWidth, innerHeight} = window;
-  return {innerWidth, innerHeight};
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
 }
-
+const backBtbStyle = {
+  border: 0,
+  background: "inherit",
+};
 
 export default function NavBar() {
-  const [windowSize, ] = useState(getWindowSize());
-  let navigate  = useNavigate();
-
+  const [windowSize] = useState(getWindowSize());
+  let navigate = useNavigate();
 
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
-      <div className="container-fluid"
-      style={{ padding: windowSize.innerWidth > 768 ? "0px 5%": ''}}
+      <div
+        className="container-fluid"
+        style={{ padding: windowSize.innerWidth > 768 ? "0px 5%" : "" }}
       >
-      <span>
-          <>
-        {useLocation().pathname !== "/" &&
-          windowSize.innerWidth < 768 &&
-          <button onClick={() => navigate(-1)}>Back</button> 
-        }
-        </>
-          </span>
+        {useLocation().pathname !== "/" && windowSize.innerWidth < 768 && (
+          <button
+            onClick={() => navigate(-1)}
+            style={backBtbStyle}
+            type="button"
+            data-bs-target="#hero-slide"
+            data-bs-slide="prev"
+          >
+            <span className="carousel-control-prev-icon" aria-hidden="true">
+              <span className="visually-hidden">Previous</span>
+            </span>
+          </button>
+        )}
 
-          <span>
-        <Link className="navbar-brand" to="/">
-          <img
-            src="images/newSafeLogo.png"
-            style={{ width: "150px" }}
-            className="logo img-fluid"
-            alt="Logo"
-          />
-                  </Link>
-          </span> 
+        <span>
+          <Link className="navbar-brand" to="/">
+            <img
+              src="images/newSafeLogo.png"
+              style={{ width: "150px" }}
+              className="logo img-fluid"
+              alt="Logo"
+            />
+          </Link>
+        </span>
         <button
           className="navbar-toggler"
           type="button"
@@ -73,22 +81,22 @@ export default function NavBar() {
               >
                 <li>
                   <Link className="dropdown-item" to="/Low-Current/1">
-                  Audio visual
+                    Audio visual
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/Low-Current/2">
-                  Public Address
+                    Public Address
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/Low-Current/3">
-                  Fire Detection
+                    Fire Detection
                   </Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/Low-Current/4">
-                  Access Control
+                    Access Control
                   </Link>
                 </li>
                 <li>
