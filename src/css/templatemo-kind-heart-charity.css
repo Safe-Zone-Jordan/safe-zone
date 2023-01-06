@@ -162,6 +162,9 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
 }
+span {
+  color: var(--primary-color);
+}
 
 /*---------------------------------------
   SECTION               
@@ -1392,10 +1395,10 @@ blockquote::before {
     font-size: 18px;
   }
 
-  .section-padding {
+  /* .section-padding {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
+  } */
 
   .hero-form {
     padding-bottom: 40px;

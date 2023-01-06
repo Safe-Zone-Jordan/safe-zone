@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/images/newSafeLogo.png";
 
@@ -15,6 +15,11 @@ const backBtbStyle = {
 export default function NavBar() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   const [open, setOpen] = useState(false);
+  
+  const NavToHome = (rout) => {
+    setOpen(false);
+    navigate(rout);
+  };
 
   const toggle = () => setOpen(!open);
 
@@ -79,8 +84,13 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link click-scroll" to="/">
-                Home
+              <Link className="nav-link click-scroll" 
+               onClick={()=>{NavToHome("/")}}
+                to={"/"}
+               data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+               data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
+          >
+               Home
               </Link>
             </li>
 
@@ -105,27 +115,50 @@ export default function NavBar() {
                 }}
               >
                 <li>
-                  <Link className="dropdown-item" to="/Audio-and-visual">
+                  <Link className="dropdown-item"
+                  onClick={()=>{NavToHome("/Audio-and-visual")}}
+                  to={"/Audio-and-visual"}
+                  data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+                  data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
+                  >
                     Audio visual
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/Public-Address">
+                  <Link className="dropdown-item"
+                   onClick={()=>{NavToHome("/Public-Address")}}
+                   to={"/Public-Address"}
+                   data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+                   data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
                     Public Address
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/Fire-Detection">
+                  <Link className="dropdown-item"
+                  onClick={()=>{NavToHome("/Fire-Detection")}}
+                  to={"/Fire-Detection"}
+                  data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+                  data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
+                    
                     Fire Detection
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/Access-Control">
+                  <Link className="dropdown-item"
+                  onClick={()=>{NavToHome("/Access-Control")}}
+                  to={"/Access-Control"}
+                  data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+                data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
                     Access Control
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/Medical">
+                  <Link className="dropdown-item"
+                   onClick={()=>{NavToHome("/Medical")}}
+                   to={"/Medical"}
+                   data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+                data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
+                >
                     Medical Field
                   </Link>
                 </li>
@@ -133,17 +166,35 @@ export default function NavBar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link click-scroll" to="/partners">
+              <Link className="nav-link click-scroll"
+               onClick={()=>{NavToHome("/partners")}}
+               to={"/partners"}
+               data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+               data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
+
                 Partners
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link click-scroll" to="/Clients">
+              <Link className="nav-link click-scroll"
+              onClick={()=>{NavToHome("/Clients")}}
+              to={"/Clients"}
+              data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+              data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
+                >
+                
                 Clients
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link click-scroll" to="/about-us">
+              <Link className="nav-link click-scroll"
+              to={"/about-us"}
+                onClick={()=>{NavToHome("/about-us")}}
+                
+                data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
+                data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
+              >
+
                 About Us
               </Link>
             </li>
