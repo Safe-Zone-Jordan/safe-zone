@@ -53,7 +53,7 @@
 
   --body-font-family: "Metropolis", sans-serif;
 
-  --h1-font-size: 52px;
+  --h1-font-size: 35px;
   --h2-font-size: 46px;
   --h3-font-size: 32px;
   --h4-font-size: 28px;
@@ -1369,7 +1369,7 @@ blockquote::before {
 
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 42px;
+    font-size: 35px;
   }
 
   h2 {
@@ -1568,7 +1568,7 @@ blockquote::before {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   h2 {

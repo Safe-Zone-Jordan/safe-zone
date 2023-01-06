@@ -1,8 +1,8 @@
 import React from "react";
 // #e9ecefc9
 
-import placeHolder from "../../assets/images/slide/low-current-placeHolder-2.jpg"; 
-import placeHolder2 from "../../assets/images/slide/low-current-placeHolder-4.jpg"; 
+import placeHolder from "../../assets/images/slide/low-current-placeHolder-2.jpg";
+import placeHolder2 from "../../assets/images/slide/low-current-placeHolder-4.jpg";
 import placeHolder3 from "../../assets/images/slide/low-current-placeHolder-5.jpg";
 import placeHolder4 from "../../assets/images/slide/low-current-placeHolder-3.jpg";
 

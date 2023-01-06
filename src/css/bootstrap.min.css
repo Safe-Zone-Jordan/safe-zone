@@ -10444,12 +10444,12 @@ fieldset:disabled .btn {
   max-width: 255px !important;
   height: auto !important;
 }
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .about-missions-image {
     margin: auto !important;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .about-missions-text {
     text-align: center;
   }
