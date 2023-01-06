@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Logo from "../assets/images/newSafeLogo.png";
 
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
@@ -53,7 +54,7 @@ export default function NavBar() {
         <span>
           <Link className="navbar-brand" to="/">
             <img
-              src="images/newSafeLogo.png"
+              src={Logo}
               style={{ width: "150px" }}
               className="logo img-fluid"
               alt="Logo"

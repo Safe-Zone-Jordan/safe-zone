@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import medical from "../../assets/images/icons/medical.webp";
 
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
@@ -41,8 +42,8 @@ export default function PrefCard() {
                     <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
                       <img
                         style={{ borderRadius: "5%" }}
-                        src="images/icons/medical.webp"
-                        alt="Coffe Flavour"
+                        src={medical}
+                        alt="medical"
                         className="img-fluid"
                         loading="lazy"
                       />
@@ -78,7 +79,7 @@ export default function PrefCard() {
                     <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
                       <img
                         style={{ borderRadius: "5%" }}
-                        src="images/icons/medical.webp"
+                        src={medical}
                         alt="Health Benefits"
                         className="img-fluid"
                         loading="lazy"

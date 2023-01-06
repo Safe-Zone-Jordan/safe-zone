@@ -1,4 +1,5 @@
 import React from "react";
+import medical from "../assets/images/icons/medical.webp";
 
 export default function AboutUs() {
   return (
@@ -65,7 +66,7 @@ export default function AboutUs() {
             <picture>
               <img
                 className="img-fluid rounded shadow-sm"
-                src="images/icons/medical.webp"
+                src={medical}
                 alt="HTML Bootstrap Template by Pixel Rocket"
               />
             </picture>

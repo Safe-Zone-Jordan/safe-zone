@@ -1,5 +1,11 @@
 import React from "react";
 // #e9ecefc9
+
+import placeHolder from "../../assets/images/slide/low-current-placeHolder-2.jpg"; 
+import placeHolder2 from "../../assets/images/slide/low-current-placeHolder-4.jpg"; 
+import placeHolder3 from "../../assets/images/slide/low-current-placeHolder-5.jpg";
+import placeHolder4 from "../../assets/images/slide/low-current-placeHolder-3.jpg";
+
 export default function Carousal() {
   return (
     <section className="hero-section hero-section-full-height">
@@ -15,7 +21,7 @@ export default function Carousal() {
                 <div className="carousel-item active">
                   <img
                     // src="images/slide/volunteer-helping-with-donation-box.jpg"
-                    src="images/slide/low-current-placeHolder-4.jpg"
+                    src={placeHolder2}
                     className="carousel-image img-fluid"
                     alt="..."
                   />
@@ -27,7 +33,7 @@ export default function Carousal() {
                 <div className="carousel-item">
                   <img
                     // src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
-                    src="images/slide/low-current-placeHolder-2.jpg"
+                    src={placeHolder4}
                     className="carousel-image img-fluid"
                     alt="..."
                   />
@@ -39,7 +45,7 @@ export default function Carousal() {
                 <div className="carousel-item">
                   <img
                     // src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
-                    src="images/slide/low-current-placeHolder-5.jpg"
+                    src={placeHolder3}
                     className="carousel-image img-fluid"
                     alt="..."
                   />
@@ -51,7 +57,7 @@ export default function Carousal() {
                 <div className="carousel-item">
                   <img
                     // src="images/slide/medium-shot-people-collecting-donations.jpg"
-                    src="images/slide/low-current-placeHolder-3.jpg"
+                    src={placeHolder}
                     className="carousel-image img-fluid"
                     alt="..."
                   />

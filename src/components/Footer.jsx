@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import safeLogo from "../assets/images/newSafeLogo.png";
 const aTagStyle = {
   textDecoration: "none",
 };
@@ -15,7 +16,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-lg-3 col-12 mb-4">
             <img
-              src="images/newSafeLogo.png"
+              src={safeLogo}
               style={{ width: "250px" }}
               className="logo img-fluid"
               alt=""

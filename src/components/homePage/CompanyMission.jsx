@@ -1,5 +1,6 @@
 import React from "react";
-
+import safeZone from "../../assets/images/icons/safeZone.png";
+import safeLogo from "../../assets/images/newSafeLogo.png";
 export default function CompanyMission() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function CompanyMission() {
             <div className="col-lg-6 col-md-7 col-12">
               <img
                 style={{ maxWidth: "255px", height: "auto" }}
-                src="images/icons/safeZone.png"
+                src={safeZone}
                 className="about-image ms-lg-auto bg-light shadow-lg"
                 alt=""
               />
@@ -19,7 +20,7 @@ export default function CompanyMission() {
 
                 <p className="text-muted mb-lg-4 mb-md-4">
                   <img
-                    src="images/newSafeLogo.png"
+                    src={safeLogo}
                     style={{ width: "255px" }}
                     className="logo img-fluid"
                     alt="Logo"
