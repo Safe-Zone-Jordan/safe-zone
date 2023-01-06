@@ -85,9 +85,10 @@ export default function NavBar() {
             </li>
 
             <li className="nav-item dropdown">
+              {/* eslint-disable jsx-a11y/anchor-is-valid */}
               <a
                 className="nav-link click-scroll dropdown-toggle"
-                href="#section_5"
+                // href="#"
                 id="navbarLightDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -99,7 +100,9 @@ export default function NavBar() {
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarLightDropdownMenuLink"
-                style={{ display: open ? "block" : "" }}
+                style={{
+                  display: open && windowSize.innerWidth < 992 ? "block" : "",
+                }}
               >
                 <li>
                   <Link className="dropdown-item" to="/Low-Current/1">
