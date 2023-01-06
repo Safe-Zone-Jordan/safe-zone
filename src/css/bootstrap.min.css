@@ -10440,3 +10440,17 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+.about-missions-image {
+  max-width: 255px !important;
+  height: auto !important;
+}
+@media (max-width: 800px) {
+  .about-missions-image {
+    margin: auto !important;
+  }
+}
+@media (max-width: 800px) {
+  .about-missions-text {
+    text-align: center;
+  }
+}

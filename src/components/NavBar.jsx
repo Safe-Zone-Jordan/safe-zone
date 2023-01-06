@@ -36,21 +36,25 @@ export default function NavBar() {
         className="container-fluid"
         style={{ padding: windowSize.innerWidth > 992 ? "0px 5%" : "" }}
       >
-         <span>
-        {useLocation().pathname !== "/" && windowSize.innerWidth < 992 &&  (
-              <button
-                onClick={() => navigate(-1)}
-                style={backBtbStyle}
-                type="button"
-                data-bs-target="#hero-slide"
-                data-bs-slide="prev"
+        <span>
+          {useLocation().pathname !== "/" && windowSize.innerWidth < 992 && (
+            <button
+              onClick={() => navigate(-1)}
+              style={backBtbStyle}
+              type="button"
+              data-bs-target="#hero-slide"
+              data-bs-slide="prev"
+            >
+              <span
+                style={{ width: "40px", height: "40px" }}
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
               >
-                   <span className="carousel-control-prev-icon" aria-hidden="true">
-              <span className="visually-hidden">Previous</span>
-            </span>
-              </button>
-        )}
-          </span>
+                <span className="visually-hidden">Previous</span>
+              </span>
+            </button>
+          )}
+        </span>
         <span>
           <Link className="navbar-brand" to="/">
             <img
@@ -89,14 +93,13 @@ export default function NavBar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 onClick={toggle}
-                >
+              >
                 Sectors
               </a>
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarLightDropdownMenuLink"
-                style={{ display: open ? "block":"" }}
-              
+                style={{ display: open ? "block" : "" }}
               >
                 <li>
                   <Link className="dropdown-item" to="/Low-Current/1">
