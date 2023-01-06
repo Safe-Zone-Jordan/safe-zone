@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import ImageHolder from "../assets/elementor-placeholder-image.jpg";
 
 export default function ServiceFullPage() {
-  const { id } = useParams();
+  const { name } = useParams();
   let data = require("../data/Categories.json");
-  data = data.find((item) => +item.id === +id);
+  data = data.find((item) => item.name.split(" ").join("-") === name);
   return (
     <section className="about-section section-padding">
       <div className="container">

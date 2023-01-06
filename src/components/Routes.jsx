@@ -19,7 +19,7 @@ export default function AppRoutes() {
         <ScrollToTop />
         <Routes>
           <Route path="/about-us/*" element={<AboutUs />} />
-          <Route path="/Low-Current/:id" element={<ServiceFullPage  />} />
+          <Route path="/:name" element={<ServiceFullPage  />} />
           <Route path="/Medical/*" element={<Medical />} />
           <Route path="/Partners/*" element={<Partners />} />
           <Route path="/clients/*" element={<Clients />} />
