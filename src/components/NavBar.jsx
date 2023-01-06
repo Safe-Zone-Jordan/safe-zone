@@ -105,22 +105,22 @@ export default function NavBar() {
                 }}
               >
                 <li>
-                  <Link className="dropdown-item" to="/Low-Current/1">
+                  <Link className="dropdown-item" to="/Audio-and-visual">
                     Audio visual
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/Low-Current/2">
+                  <Link className="dropdown-item" to="/Public-Address">
                     Public Address
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/Low-Current/3">
+                  <Link className="dropdown-item" to="/Fire-Detection">
                     Fire Detection
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/Low-Current/4">
+                  <Link className="dropdown-item" to="/Access-Control">
                     Access Control
                   </Link>
                 </li>
