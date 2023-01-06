@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import medical from "../../assets/images/icons/medical.webp";
 const aTagStyle = {
   textDecoration: "none",
 };
@@ -8,7 +9,7 @@ export default function ServiceCard({ id }) {
     <div className="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0" key={id}>
       <div className="featured-block  justify-content-center align-items-center">
         <img
-          src="images/icons/medical.webp"
+          src={medical}
           className="custom-block-image img-fluid"
           alt=""
         />
