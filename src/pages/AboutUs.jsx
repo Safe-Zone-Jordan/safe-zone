@@ -15,25 +15,19 @@ export default function AboutUs() {
         <div className="col-12 col-md-8 col-lg-6 mx-auto text-center py-4 border-bottom mb-5">
           <div className="my-5 d-none d-md-flex align-items-start justify-content-between">
             <div>
-              <span className="display-3 fw-bold text-primary d-block">
-                40+
-              </span>
+              <span className="display-3 fw-bold  d-block">40+</span>
               <span className="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted">
                 Covered Locations
               </span>
             </div>
             <div>
-              <span className="display-3 fw-bold text-primary d-block">
-                30+
-              </span>
+              <span className="display-3 fw-bold  d-block">30+</span>
               <span className="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted">
                 Customers
               </span>
             </div>
             <div>
-              <span className="display-3 fw-bold text-primary d-block">
-                10+
-              </span>
+              <span className="display-3 fw-bold  d-block">10+</span>
               <span className="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted">
                 Staff
               </span>
@@ -43,7 +37,10 @@ export default function AboutUs() {
 
         <div className="py-6 row gx-8 align-items-center">
           <div className="col-12 col-lg-6">
-            <p className="mb-3 small fw-bolder tracking-wider text-uppercase text-primary">
+            <p
+              style={{ color: "#5bc1ac" }}
+              className="mb-3 small fw-bolder tracking-wider text-uppercase "
+            >
               How it started
             </p>
             <h2 className="display-5 fw-bold mb-6">Our story</h2>

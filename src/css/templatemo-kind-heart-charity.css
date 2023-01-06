@@ -162,6 +162,9 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
 }
+span {
+  color: var(--primary-color);
+}
 
 /*---------------------------------------
   SECTION               
