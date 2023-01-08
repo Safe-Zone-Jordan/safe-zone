@@ -660,12 +660,14 @@ span {
   background-position: center;
   background-size: cover;
 }
+.about-main-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 .about-image {
-  border-radius: var(--border-radius-medium);
   display: block;
-  width: 350px;
-  height: 400px;
+  width: 165px;
   object-fit: cover;
 }
 
@@ -1506,10 +1508,10 @@ blockquote::before {
     padding: 70px 30px 30px 30px;
   }
 
-  .about-image {
+  /* .about-image {
     width: inherit;
     height: 450px;
-  }
+  } */
 
   .volunteer-image {
     width: 250px;
