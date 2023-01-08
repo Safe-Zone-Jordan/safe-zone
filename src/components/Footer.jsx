@@ -58,12 +58,39 @@ export default function Footer() {
               >
                 contact@safezoneco.net
               </a>
-            </p>           
+              
+            </p>   
+            
+            
+            <ul  className="d-flex">
+                <li className="social-icon-item">
+                  <a
+                    href="https://www.facebook.com/safezoneco"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social-icon-link bi-facebook"
+                  >
+                    {" "}
+                  </a>
+                </li>
+                <li className="social-icon-item">
+                  <a
+                    href="https://www.instagram.com/safezone979"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social-icon-link bi-instagram"
+                  >
+                    {" "}
+                  </a>
+                </li>
+              </ul>
+              
+                
           </div>
           <div className="col-lg-4 col-md-6 col-12 mx-auto">
           <p className="text-white d-flex mt-3">
               <i className="bi-geo-alt me-2" />
-              Jordan, Amman, Abdoon, Malta
+              Jordan, Amman, Abu Nseir, ASU Circle
             </p>
             <iframe
               title="Google Map"
@@ -73,14 +100,14 @@ export default function Footer() {
               marginHeight="0"
               marginWidth="0"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?width=1208&amp;height=721&amp;hl=en&amp;q=%20Amman+(ltus)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://maps.google.com/maps?width=1208&amp;height=721&amp;hl=en&amp;q=%20ASU+Cir.,+Amman&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
 
             {/* <Link to="#" style={aTagStyle} className="custom-btn btn mt-3"> */}
             <a
               style={{aTagStyle, display: "block", width: "50%", textAlign: "center" }}
               className="custom-btn btn mt-3"
-              href="http://maps.google.com/?q=amman Abu Nseir Medical Labs, Abu Nuseir St, Amman"
+              href="http://maps.google.com/?q=amman ASU Cir., Amman"
               target="_blank"
               rel="noreferrer"
             >
@@ -90,6 +117,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* 
+      
       <div className="site-footer-bottom">
         <div className="container">
           <div className="row">
@@ -123,6 +152,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      */}
     </footer>
   );
 }
