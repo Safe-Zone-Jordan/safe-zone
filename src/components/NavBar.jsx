@@ -5,21 +5,19 @@ import Logo from "../assets/images/newSafeLogo.png";
 import topLeft from "../assets/topLeft.png";
 
 const fullSize = {
-  backgroundImage:`url(${topLeft})`,
-         backgroundRepeat:"no-repeat",
-          backgroundPosition:"left top",
-          backgroundSize:"20% 100%",
-          opacity:"0.8",
-}
+  backgroundImage: `url(${topLeft})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "left top",
+  backgroundSize: "23% 100%",
+};
 const smallSize = {
-  backgroundImage:`url(${topLeft})`,
-         backgroundRepeat:"no-repeat",
-          backgroundPosition:"left top",
-          backgroundSize:"130px 45px",
-          margin:"0px 0px",
-          padding:"5px 5px",
-          opacity:"0.8",
-}
+  backgroundImage: `url(${topLeft})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "left top",
+  backgroundSize: "30% 45px",
+  margin: "0px 0px",
+  padding: "5px 5px",
+};
 
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
@@ -33,7 +31,7 @@ const backBtbStyle = {
 export default function NavBar() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   const [open, setOpen] = useState(false);
-  
+
   const NavToHome = (rout) => {
     setOpen(false);
     navigate(rout);
@@ -54,12 +52,12 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
-      <div
-        className="container-fluid"
-        style={windowSize.innerWidth>992? {...fullSize}: {...smallSize}}
-      >
-        <span >
+    <nav
+      style={windowSize.innerWidth > 992 ? { ...fullSize } : { ...smallSize }}
+      className="navbar fixed-top navbar-expand-lg bg-light shadow-lg"
+    >
+      <div className="container-fluid">
+        <span>
           {useLocation().pathname !== "/" && windowSize.innerWidth < 992 && (
             <button
               onClick={() => navigate(-1)}
@@ -69,7 +67,7 @@ export default function NavBar() {
               data-bs-slide="prev"
             >
               <span
-                style={{ width: "40px", height: "40px" }}
+                style={{ width: "25px", height: "25px" }}
                 className="carousel-control-prev-icon"
                 aria-hidden="true"
               >
@@ -78,7 +76,8 @@ export default function NavBar() {
             </button>
           )}
         </span>
-        <span>
+
+        <span style={{ marginLeft: "20%" }}>
           <Link className="navbar-brand" to="/">
             <img
               src={Logo}
@@ -102,13 +101,20 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link click-scroll" 
-               onClick={()=>{NavToHome("/")}}
+              <Link
+                className="nav-link click-scroll"
+                onClick={() => {
+                  NavToHome("/");
+                }}
                 to={"/"}
-               data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-               data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
-          >
-               Home
+                data-bs-toggle={`${
+                  windowSize.innerWidth < 992 ? "collapse" : ""
+                }`}
+                data-bs-target={`${
+                  windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                }`}
+              >
+                Home
               </Link>
             </li>
 
@@ -133,50 +139,87 @@ export default function NavBar() {
                 }}
               >
                 <li>
-                  <Link className="dropdown-item"
-                  onClick={()=>{NavToHome("/Audio-and-visual")}}
-                  to={"/Audio-and-visual"}
-                  data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-                  data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
+                  <Link
+                    className="dropdown-item"
+                    onClick={() => {
+                      NavToHome("/Audio-and-visual");
+                    }}
+                    to={"/Audio-and-visual"}
+                    data-bs-toggle={`${
+                      windowSize.innerWidth < 992 ? "collapse" : ""
+                    }`}
+                    data-bs-target={`${
+                      windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                    }`}
                   >
                     Audio visual
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item"
-                   onClick={()=>{NavToHome("/Public-Address")}}
-                   to={"/Public-Address"}
-                   data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-                   data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
+                  <Link
+                    className="dropdown-item"
+                    onClick={() => {
+                      NavToHome("/Public-Address");
+                    }}
+                    to={"/Public-Address"}
+                    data-bs-toggle={`${
+                      windowSize.innerWidth < 992 ? "collapse" : ""
+                    }`}
+                    data-bs-target={`${
+                      windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                    }`}
+                  >
                     Public Address
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item"
-                  onClick={()=>{NavToHome("/Fire-Detection")}}
-                  to={"/Fire-Detection"}
-                  data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-                  data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
-                    
+                  <Link
+                    className="dropdown-item"
+                    onClick={() => {
+                      NavToHome("/Fire-Detection");
+                    }}
+                    to={"/Fire-Detection"}
+                    data-bs-toggle={`${
+                      windowSize.innerWidth < 992 ? "collapse" : ""
+                    }`}
+                    data-bs-target={`${
+                      windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                    }`}
+                  >
                     Fire Detection
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item"
-                  onClick={()=>{NavToHome("/Access-Control")}}
-                  to={"/Access-Control"}
-                  data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-                data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
+                  <Link
+                    className="dropdown-item"
+                    onClick={() => {
+                      NavToHome("/Access-Control");
+                    }}
+                    to={"/Access-Control"}
+                    data-bs-toggle={`${
+                      windowSize.innerWidth < 992 ? "collapse" : ""
+                    }`}
+                    data-bs-target={`${
+                      windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                    }`}
+                  >
                     Access Control
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item"
-                   onClick={()=>{NavToHome("/Medical")}}
-                   to={"/Medical"}
-                   data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-                data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
-                >
+                  <Link
+                    className="dropdown-item"
+                    onClick={() => {
+                      NavToHome("/Medical");
+                    }}
+                    to={"/Medical"}
+                    data-bs-toggle={`${
+                      windowSize.innerWidth < 992 ? "collapse" : ""
+                    }`}
+                    data-bs-target={`${
+                      windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                    }`}
+                  >
                     Medical Field
                   </Link>
                 </li>
@@ -184,35 +227,53 @@ export default function NavBar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link click-scroll"
-               onClick={()=>{NavToHome("/partners")}}
-               to={"/partners"}
-               data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-               data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}>
-
+              <Link
+                className="nav-link click-scroll"
+                onClick={() => {
+                  NavToHome("/partners");
+                }}
+                to={"/partners"}
+                data-bs-toggle={`${
+                  windowSize.innerWidth < 992 ? "collapse" : ""
+                }`}
+                data-bs-target={`${
+                  windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                }`}
+              >
                 Partners
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link click-scroll"
-              onClick={()=>{NavToHome("/Clients")}}
-              to={"/Clients"}
-              data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-              data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
-                >
-                
+              <Link
+                className="nav-link click-scroll"
+                onClick={() => {
+                  NavToHome("/Clients");
+                }}
+                to={"/Clients"}
+                data-bs-toggle={`${
+                  windowSize.innerWidth < 992 ? "collapse" : ""
+                }`}
+                data-bs-target={`${
+                  windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                }`}
+              >
                 Clients
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link click-scroll"
-              to={"/about-us"}
-                onClick={()=>{NavToHome("/about-us")}}
-                
-                data-bs-toggle={`${windowSize.innerWidth < 992 ?"collapse":""}`}
-                data-bs-target={`${windowSize.innerWidth < 992 ?"#navbarNav":""}`}
+              <Link
+                className="nav-link click-scroll"
+                to={"/about-us"}
+                onClick={() => {
+                  NavToHome("/about-us");
+                }}
+                data-bs-toggle={`${
+                  windowSize.innerWidth < 992 ? "collapse" : ""
+                }`}
+                data-bs-target={`${
+                  windowSize.innerWidth < 992 ? "#navbarNav" : ""
+                }`}
               >
-
                 About Us
               </Link>
             </li>

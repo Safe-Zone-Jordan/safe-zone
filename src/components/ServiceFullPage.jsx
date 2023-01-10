@@ -13,7 +13,7 @@ export default function ServiceFullPage() {
           <div className="col-12">
             <h1 className="text-center">{data.name}</h1>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 order-lg-1 order-2 col-lg-6">
             <p>
               With more than 6 years of experienced, Safe Zone has built a wide
               reputation of Low Current system professional work. Safe Zone
@@ -29,10 +29,10 @@ export default function ServiceFullPage() {
               <li>Lorem ipsum dolor sit amet consectetur</li>
             </ul>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 order-lg-2 order-1 col-lg-6 ">
             <picture>
               <img
-                className="img-fluid rounded shadow-sm"
+                className="img-fluid rounded shadow-sm about-us-image"
                 src={ImageHolder}
                 alt="HTML Bootstrap Template by Pixel Rocket"
               />
