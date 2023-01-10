@@ -2,6 +2,24 @@ import React, { useEffect, useState } from "react";
 import { Link, Navigate, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/images/newSafeLogo.png";
+import topLeft from "../assets/topLeft.png";
+
+const fullSize = {
+  backgroundImage:`url(${topLeft})`,
+         backgroundRepeat:"no-repeat",
+          backgroundPosition:"left top",
+          backgroundSize:"20% 100%",
+          opacity:"0.8",
+}
+const smallSize = {
+  backgroundImage:`url(${topLeft})`,
+         backgroundRepeat:"no-repeat",
+          backgroundPosition:"left top",
+          backgroundSize:"130px 45px",
+          margin:"0px 0px",
+          padding:"5px 5px",
+          opacity:"0.8",
+}
 
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
@@ -39,9 +57,9 @@ export default function NavBar() {
     <nav className="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
       <div
         className="container-fluid"
-        style={{ padding: windowSize.innerWidth > 992 ? "0px 5%" : "" }}
+        style={windowSize.innerWidth>992? {...fullSize}: {...smallSize}}
       >
-        <span>
+        <span >
           {useLocation().pathname !== "/" && windowSize.innerWidth < 992 && (
             <button
               onClick={() => navigate(-1)}

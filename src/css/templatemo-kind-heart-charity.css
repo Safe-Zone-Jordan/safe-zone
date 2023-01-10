@@ -1439,8 +1439,8 @@ blockquote::before {
   }
 
   .navbar {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .navbar-expand-lg .navbar-nav {
