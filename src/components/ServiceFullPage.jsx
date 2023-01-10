@@ -9,7 +9,37 @@ export default function ServiceFullPage() {
   return (
     <section className="about-section section-padding">
       <div className="container">
-        <div className="row">
+        <div className="py-6 row gx-8 align-items-center">
+          <div className="col-12">
+            <h1 className="text-center">{data.name}</h1>
+          </div>
+          <div className="col-12 col-lg-6">
+            <p>
+              With more than 6 years of experienced, Safe Zone has built a wide
+              reputation of Low Current system professional work. Safe Zone
+              consist of 3 professional Engineers with 9 Professional crews who
+              they can arrange to cover our business core. Safe Zone has
+              accomplished many projects all over Jordan with a worth value of
+              350k JOD more than 35 projects references.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+          </div>
+          <div className="col-12 col-lg-6">
+            <picture>
+              <img
+                className="img-fluid rounded shadow-sm"
+                src={ImageHolder}
+                alt="HTML Bootstrap Template by Pixel Rocket"
+              />
+            </picture>
+          </div>
+        </div>
+        {/* <div className="row">
           <div className="col-12">
             <h1 className="text-center">{data.name}</h1>
           </div>
@@ -53,7 +83,7 @@ export default function ServiceFullPage() {
               repellendus alias quis repudiandae velit nemo dolores.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

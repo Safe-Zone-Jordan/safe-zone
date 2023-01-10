@@ -660,12 +660,14 @@ span {
   background-position: center;
   background-size: cover;
 }
+.about-main-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 .about-image {
-  border-radius: var(--border-radius-medium);
   display: block;
-  width: 350px;
-  height: 400px;
+  width: 165px;
   object-fit: cover;
 }
 
@@ -1251,7 +1253,35 @@ blockquote::before {
 -----------------------------------------*/
 .site-footer {
   background-color: var(--site-footer-bg-color);
+  /* background-image: linear-gradient(
+    to right,
+    #d4f6cc,
+    var(--site-footer-bg-color)
+  ); */
   padding-top: 70px;
+}
+.text-logo {
+  letter-spacing: 2px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color);
+  /* text-transform: uppercase; */
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  text-align: center;
+}
+.sup-text-logo {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+.text-logo-span {
+  -webkit-text-fill-color: var(--primary-color);
+  -webkit-text-stroke-width: 0px;
 }
 
 .site-footer-bottom {
@@ -1506,10 +1536,10 @@ blockquote::before {
     padding: 70px 30px 30px 30px;
   }
 
-  .about-image {
+  /* .about-image {
     width: inherit;
     height: 450px;
-  }
+  } */
 
   .volunteer-image {
     width: 250px;
@@ -1630,4 +1660,55 @@ blockquote::before {
   .donate-form {
     padding: 25px;
   }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translate(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translate(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.text-animation {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.sup-text-animation {
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.social-icon-item-sup {
+  background-color: #5bc1ac !important;
 }
