@@ -1355,7 +1355,10 @@ blockquote::before {
   display: inline-block;
   vertical-align: top;
 }
-
+.about-us-image {
+  width: 100%;
+  margin-bottom: 15px;
+}
 .social-icon-link {
   background: var(--site-footer-bg-color);
   border-radius: var(--border-radius-large);
@@ -1439,8 +1442,8 @@ blockquote::before {
   }
 
   .navbar {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .navbar-expand-lg .navbar-nav {
@@ -1619,6 +1622,11 @@ blockquote::before {
   h5 {
     font-size: 20px;
   }
+  @media screen and (max-width: 990px) {
+    .about-us-image {
+      width: auto !important;
+    }
+  }
 
   #hero-slide .carousel-caption {
     min-width: inherit;
@@ -1661,6 +1669,20 @@ blockquote::before {
     padding: 25px;
   }
 }
+.text-animation {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.sup-text-animation {
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.social-icon-item-sup {
+  background-color: #5bc1ac !important;
+}
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -1697,18 +1719,4 @@ blockquote::before {
     opacity: 1;
     transform: translate(0);
   }
-}
-.text-animation {
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-.sup-text-animation {
-  animation-name: moveInRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-
-.social-icon-item-sup {
-  background-color: #5bc1ac !important;
 }
