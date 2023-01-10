@@ -5,22 +5,29 @@ const aTagStyle = {
   textDecoration: "none",
 };
 function getWindowSize() {
-  const {innerWidth, innerHeight} = window;
-  return {innerWidth, innerHeight};
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
 }
 export default function Footer() {
-  const [windowSize, ] = useState(getWindowSize());
+  const [windowSize] = useState(getWindowSize());
   return (
-    <footer className="site-footer" >
-      <div className="container" style={{padding: windowSize.innerWidth < 768 ? "0px 10%": '0px'}}>
+    <footer className="site-footer">
+      <div
+        className="container"
+        style={{ padding: windowSize.innerWidth < 768 ? "0px 10%" : "0px" }}
+      >
         <div className="row">
-          <div className="col-lg-3 col-12 mb-4">
-            <img
+          <div className="col-lg-4 col-12 mb-4">
+            {/* <img
               src={safeLogo}
               style={{ width: "250px" }}
               className="logo img-fluid"
               alt=""
-            />
+            /> */}
+            <h1 className="text-logo">
+              Safe Zone<sup className="text-logo-span">&reg;</sup>
+            </h1>
+            <h2 className="sup-text-logo">For Engineering & Trading Co.</h2>
           </div>
           <div className="col-lg-4 col-md-6 col-12 mb-4">
             <h5 className="site-footer-title mb-3">Contact Information</h5>
@@ -58,37 +65,33 @@ export default function Footer() {
               >
                 contact@safezoneco.net
               </a>
-              
-            </p>   
-            
-            
-            <ul  className="d-flex">
-                <li className="social-icon-item">
-                  <a
-                    href="https://www.facebook.com/safezoneco"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="social-icon-link bi-facebook"
-                  >
-                    {" "}
-                  </a>
-                </li>
-                <li className="social-icon-item">
-                  <a
-                    href="https://www.instagram.com/safezone979"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="social-icon-link bi-instagram"
-                  >
-                    {" "}
-                  </a>
-                </li>
-              </ul>
-              
-                
+            </p>
+
+            <ul className="d-flex">
+              <li className="social-icon-item">
+                <a
+                  href="https://www.facebook.com/safezoneco"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-icon-link bi-facebook"
+                >
+                  {" "}
+                </a>
+              </li>
+              <li className="social-icon-item">
+                <a
+                  href="https://www.instagram.com/safezone979"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-icon-link bi-instagram"
+                >
+                  {" "}
+                </a>
+              </li>
+            </ul>
           </div>
           <div className="col-lg-4 col-md-6 col-12 mx-auto">
-          <p className="text-white d-flex mt-3">
+            <p className="text-white d-flex mt-3">
               <i className="bi-geo-alt me-2" />
               Jordan, Amman, Abu Nseir, ASU Circle
             </p>
@@ -105,7 +108,12 @@ export default function Footer() {
 
             {/* <Link to="#" style={aTagStyle} className="custom-btn btn mt-3"> */}
             <a
-              style={{aTagStyle, display: "block", width: "50%", textAlign: "center" }}
+              style={{
+                aTagStyle,
+                display: "block",
+                width: "50%",
+                textAlign: "center",
+              }}
               className="custom-btn btn mt-3"
               href="http://maps.google.com/?q=amman ASU Cir., Amman"
               target="_blank"

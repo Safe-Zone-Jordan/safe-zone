@@ -4,16 +4,16 @@ import safeLogo from "../../assets/images/newSafeLogo.png";
 export default function CompanyMission() {
   return (
     <section className=" about-main-section">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
-          <div className="col-lg-5 col-md-5 col-12">
+          <div className="col-lg-4 col-md-5 col-12">
             <img
               src={safeZone}
               className="about-image ms-lg-auto ms-md-auto bg-light shadow-lg about-missions-image"
               alt=""
             />
           </div>
-          <div className="col-lg-7 col-md-7 col-12">
+          <div className="col-lg-8 col-md-7 col-12">
             <div className="custom-text-block">
               <p className="text-muted mb-lg-4 mb-md-4 text-center">
                 <img

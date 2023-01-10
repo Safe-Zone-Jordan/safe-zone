@@ -26,8 +26,10 @@ export default function Carousal() {
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                    <h1>Build Systems</h1>
-                    <p>Professional at What We Do</p>
+                    <h1 className="text-animation">Build Systems</h1>
+                    <p className="sup-text-animation">
+                      Professional at What We Do
+                    </p>
                   </div>
                 </div>
                 <div className="carousel-item">
@@ -38,8 +40,10 @@ export default function Carousal() {
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                    <h1>Customize your Systems</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur </p>
+                    <h1 className="text-animation">Customize your Systems</h1>
+                    <p className="sup-text-animation">
+                      Lorem ipsum dolor, sit amet consectetur{" "}
+                    </p>
                   </div>
                 </div>
                 <div className="carousel-item">
@@ -50,8 +54,10 @@ export default function Carousal() {
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                    <h1>Customize your Systems</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur </p>
+                    <h1 className="text-animation">Customize your Systems</h1>
+                    <p className="sup-text-animation">
+                      Lorem ipsum dolor, sit amet consectetur{" "}
+                    </p>
                   </div>
                 </div>
                 <div className="carousel-item">
@@ -62,8 +68,10 @@ export default function Carousal() {
                     alt="..."
                   />
                   <div className="carousel-caption d-flex flex-column justify-content-end">
-                    <h1>Modify and Shine</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur </p>
+                    <h1 className="text-animation">Modify and Shine</h1>
+                    <p className="sup-text-animation">
+                      Lorem ipsum dolor, sit amet consectetur{" "}
+                    </p>
                   </div>
                 </div>
               </div>
