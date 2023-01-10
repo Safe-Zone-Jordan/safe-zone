@@ -73,7 +73,7 @@ export default function Footer() {
                   href="https://www.facebook.com/safezoneco"
                   target="_blank"
                   rel="noreferrer"
-                  className="social-icon-link bi-facebook"
+                  className="social-icon-link bi-facebook social-icon-item-sup"
                 >
                   {" "}
                 </a>
@@ -83,7 +83,7 @@ export default function Footer() {
                   href="https://www.instagram.com/safezone979"
                   target="_blank"
                   rel="noreferrer"
-                  className="social-icon-link bi-instagram"
+                  className="social-icon-link bi-instagram social-icon-item-sup"
                 >
                   {" "}
                 </a>

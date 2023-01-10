@@ -1708,3 +1708,7 @@ blockquote::before {
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
+
+.social-icon-item-sup {
+  background-color: #5bc1ac !important;
+}
