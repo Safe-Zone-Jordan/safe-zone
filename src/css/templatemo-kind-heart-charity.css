@@ -1259,6 +1259,7 @@ blockquote::before {
     var(--site-footer-bg-color)
   ); */
   padding-top: 70px;
+  padding-bottom: 20px;
 }
 .text-logo {
   letter-spacing: 2px;
