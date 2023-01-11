@@ -24,6 +24,10 @@ function getWindowSize() {
   return { innerWidth, innerHeight };
 }
 const backBtbStyle = {
+  display: "inline",
+  position: "absolute",
+  top: "0",
+  left: "0",
   border: 0,
   background: "inherit",
 };
@@ -67,7 +71,13 @@ export default function NavBar() {
               data-bs-slide="prev"
             >
               <span
-                style={{ width: "25px", height: "25px" }}
+                style={{
+                  width: "25px",
+                  height: "25px",
+                  position: "absolute",
+                  top: "5px",
+                  left: "10px",
+                }}
                 className="carousel-control-prev-icon"
                 aria-hidden="true"
               >
