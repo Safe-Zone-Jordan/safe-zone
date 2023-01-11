@@ -14,7 +14,7 @@ const smallSize = {
   backgroundImage: `url(${topLeft})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "left top",
-  backgroundSize: "30% 45px",
+  backgroundSize: "30% 46px",
   margin: "0px 0px",
   padding: "5px 5px",
 };
