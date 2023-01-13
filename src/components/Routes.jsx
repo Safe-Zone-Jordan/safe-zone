@@ -9,13 +9,16 @@ import ScrollToTop from "../ScrollToTop";
 import Partners from "../pages/Partners";
 import Clients from "../pages/Clients";
 import AboutUs from "../pages/AboutUs";
+import Nav2 from "./NavBar2";
 
 export default function AppRoutes() {
 
   return (
     <div className="App">
       <Router>
-        <NavBar />
+        {/* <NavBar /> */}
+        {/* <div><br /><br /><br /><br /></div> */}
+        <Nav2 />
         <ScrollToTop />
         <Routes>
           <Route path="/services/:name/*" element={<ServiceFullPage  />} />
