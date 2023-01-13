@@ -8,7 +8,7 @@ const clientsLogo = {
 };
 export default function Clients() {
   return (
-    <section className="section-padding" id="section_3">
+    <section className="section-padding section-bg" id="section_3">
       <div className="container">
         <div className="row">
           <div className="col-12">
