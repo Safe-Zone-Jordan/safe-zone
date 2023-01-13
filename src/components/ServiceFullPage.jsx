@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ImageHolder from "../assets/elementor-placeholder-image.jpg";
+import ImageHolder from "../assets/images/slide/low-current-placeHolder-2.jpg";
+import ImageHolder2 from "../assets/images/slide/low-current-placeHolder-3.jpg";
+import ImageHolder3 from "../assets/images/slide/low-current-placeHolder-4.jpg";
 
 export default function ServiceFullPage() {
   const { name } = useParams();
@@ -30,13 +32,80 @@ export default function ServiceFullPage() {
             </ul>
           </div>
           <div className="col-12 order-lg-2 order-1 col-lg-6 ">
-            <picture>
-              <img
-                className="img-fluid rounded shadow-sm about-us-image"
-                src={ImageHolder}
-                alt="HTML Bootstrap Template by Pixel Rocket"
-              />
-            </picture>
+            <div
+              id="hero-slide"
+              className="carousel carousel-fade slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+                    // src="images/slide/volunteer-helping-with-donation-box.jpg"
+                    src={ImageHolder}
+                    className="carousel-image img-fluid"
+                    alt="..."
+                  />
+                  <div className="carousel-caption d-flex flex-column justify-content-end">
+                    <h1 className="text-animation">Build Systems</h1>
+                    <p className="sup-text-animation">
+                      Professional at What We Do
+                    </p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img
+                    // src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
+                    src={ImageHolder2}
+                    className="carousel-image img-fluid"
+                    alt="..."
+                  />
+                  <div className="carousel-caption d-flex flex-column justify-content-end">
+                    <h1 className="text-animation">Customize your Systems</h1>
+                    <p className="sup-text-animation">
+                      Lorem ipsum dolor, sit amet consectetur{" "}
+                    </p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img
+                    // src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg"
+                    src={ImageHolder3}
+                    className="carousel-image img-fluid"
+                    alt="..."
+                  />
+                  <div className="carousel-caption d-flex flex-column justify-content-end">
+                    <h1 className="text-animation">Customize your Systems</h1>
+                    <p className="sup-text-animation">
+                      Lorem ipsum dolor, sit amet consectetur{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#hero-slide"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                />
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#hero-slide"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                />
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
         {/* <div className="row">
