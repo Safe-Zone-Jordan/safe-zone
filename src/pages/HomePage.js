@@ -12,7 +12,7 @@ export default function HomePage() {
       <CompanyMission />
       <PrefCard />
       <Partners />
-      <Clients />
+      <Clients class="section-bg"/>
     </div>
   );
 }
