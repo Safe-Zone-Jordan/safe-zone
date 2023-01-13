@@ -66,8 +66,8 @@ export default function Nav2() {
             <button onClick={() => navigate(-1)} style={backBtbStyle}>
               <span
                 style={{
-                  width: "25px",
-                  height: "25px",
+                  width: "30px",
+                  height: "30px",
                   position: "absolute",
                   top: "10px",
                   left: "10px",
