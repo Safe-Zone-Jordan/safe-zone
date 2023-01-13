@@ -66,9 +66,6 @@ export default function NavBar() {
             <button
               onClick={() => navigate(-1)}
               style={backBtbStyle}
-              type="button"
-              data-bs-target="#hero-slide"
-              data-bs-slide="prev"
             >
               <span
                 style={{
@@ -152,9 +149,9 @@ export default function NavBar() {
                   <Link
                     className="dropdown-item"
                     onClick={() => {
-                      NavToHome("/Audio-and-visual");
+                      NavToHome("/services/Audio-and-visual");
                     }}
-                    to={"/Audio-and-visual"}
+                    to={"/services/Audio-and-visual"}
                     data-bs-toggle={`${
                       windowSize.innerWidth < 992 ? "collapse" : ""
                     }`}
@@ -169,9 +166,9 @@ export default function NavBar() {
                   <Link
                     className="dropdown-item"
                     onClick={() => {
-                      NavToHome("/Public-Address");
+                      NavToHome("/services/Public-Address");
                     }}
-                    to={"/Public-Address"}
+                    to={"/services/Public-Address"}
                     data-bs-toggle={`${
                       windowSize.innerWidth < 992 ? "collapse" : ""
                     }`}
@@ -186,9 +183,9 @@ export default function NavBar() {
                   <Link
                     className="dropdown-item"
                     onClick={() => {
-                      NavToHome("/Fire-Detection");
+                      NavToHome("/services/Fire-Detection");
                     }}
-                    to={"/Fire-Detection"}
+                    to={"/services/Fire-Detection"}
                     data-bs-toggle={`${
                       windowSize.innerWidth < 992 ? "collapse" : ""
                     }`}
@@ -203,9 +200,9 @@ export default function NavBar() {
                   <Link
                     className="dropdown-item"
                     onClick={() => {
-                      NavToHome("/Access-Control");
+                      NavToHome("/services/Access-Control");
                     }}
-                    to={"/Access-Control"}
+                    to={"/services/Access-Control"}
                     data-bs-toggle={`${
                       windowSize.innerWidth < 992 ? "collapse" : ""
                     }`}
@@ -220,9 +217,9 @@ export default function NavBar() {
                   <Link
                     className="dropdown-item"
                     onClick={() => {
-                      NavToHome("/Medical");
+                      NavToHome("/services/Medical");
                     }}
-                    to={"/Medical"}
+                    to={"/services/Medical"}
                     data-bs-toggle={`${
                       windowSize.innerWidth < 992 ? "collapse" : ""
                     }`}
