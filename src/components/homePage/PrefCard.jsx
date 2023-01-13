@@ -62,7 +62,7 @@ export default function PrefCard() {
                           tempore repellat eos natus quo mollitia laborum.
                         </p>
                         <Link
-                          to={`/${item.name.split(" ").join("-")}`}
+                          to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
                           style={{
                             margin:
@@ -99,7 +99,7 @@ export default function PrefCard() {
                           tempore repellat eos natus quo mollitia laborum.
                         </p>
                         <Link
-                          to={`/${item.name.split(" ").join("-")}`}
+                          to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
                           style={{
                             margin:
