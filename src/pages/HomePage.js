@@ -10,7 +10,7 @@ export default function HomePage() {
     <div>
       <Carousal />
       <CompanyMission />
-      <PrefCard/>
+      <PrefCard />
       <Partners />
       <Clients />
     </div>

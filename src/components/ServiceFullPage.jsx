@@ -1,6 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ImageHolder from "../assets/elementor-placeholder-image.jpg";
+import Carousel from "react-bootstrap/Carousel";
+
+import ImageHolder from "../assets/images/slide/low-current-placeHolder-2.jpg";
+import ImageHolder2 from "../assets/images/slide/low-current-placeHolder-3.jpg";
+import ImageHolder3 from "../assets/images/slide/low-current-placeHolder-4.jpg";
+
+const carouselImage = {
+  width: "300px",
+  height: "300px",
+};
+const carouselContainer = {
+  width: "100%",
+  height: "100%",
+};
 
 export default function ServiceFullPage() {
   const { name } = useParams();
@@ -30,13 +43,34 @@ export default function ServiceFullPage() {
             </ul>
           </div>
           <div className="col-12 order-lg-2 order-1 col-lg-6 ">
-            <picture>
-              <img
-                className="img-fluid rounded shadow-sm about-us-image"
-                src={ImageHolder}
-                alt="HTML Bootstrap Template by Pixel Rocket"
-              />
-            </picture>
+            <div style={carouselContainer}>
+              <Carousel>
+                <Carousel.Item interval={1000}>
+                  <img
+                    style={carouselImage}
+                    className="d-block w-100"
+                    src={ImageHolder}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item interval={500}>
+                  <img
+                    style={carouselImage}
+                    className="d-block w-100"
+                    src={ImageHolder2}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    style={carouselImage}
+                    className="d-block w-100"
+                    src={ImageHolder3}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </div>
           </div>
         </div>
         {/* <div className="row">

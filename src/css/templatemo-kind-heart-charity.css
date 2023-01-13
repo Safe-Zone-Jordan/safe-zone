@@ -591,7 +591,12 @@ span {
 #hero-slide .carousel-indicators {
   margin-right: 0;
   margin-left: 22px;
-  justify-content: inherit;
+  justify-content: center;
+}
+
+.home-carousel-size {
+  width: 100%;
+  height: 680px;
 }
 
 .carousel-control-next,
