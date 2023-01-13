@@ -69,7 +69,7 @@ export default function Nav2() {
                   width: "25px",
                   height: "25px",
                   position: "absolute",
-                  top: "5px",
+                  top: "10px",
                   left: "10px",
                 }}
                 className="carousel-control-prev-icon"
