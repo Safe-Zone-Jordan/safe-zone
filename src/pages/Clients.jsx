@@ -6,9 +6,9 @@ const clientsLogo = {
   height: "60%",
   margin: "auto",
 };
-export default function Clients() {
+export default function Clients(props) {
   return (
-    <section className="section-padding section-bg" id="section_3">
+    <section className={`section-padding ${props.class}`} id="section_3">
       <div className="container">
         <div className="row">
           <div className="col-12">
