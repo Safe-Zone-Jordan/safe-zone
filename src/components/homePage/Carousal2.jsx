@@ -11,20 +11,14 @@ const carouselContainer = {
   height: "100%",
 };
 
-const carouselImage = {
-  width: "100%",
-  height: "680px",
-};
-
 export default function Carousal2() {
   return (
     <section className="hero-section hero-section-full-height">
-      <div style={carouselContainer}>
-        <Carousel variant="dark">
+      <div id="hero-slide" style={carouselContainer}>
+        <Carousel variant="green">
           <Carousel.Item>
             <img
-              style={carouselImage}
-              className="d-block w-100"
+              className="d-block w-100 home-carousel-size"
               src={placeHolder}
               alt="First slide"
             />
@@ -35,8 +29,7 @@ export default function Carousal2() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={carouselImage}
-              className="d-block w-100"
+              className="d-block w-100 home-carousel-size"
               src={placeHolder2}
               alt="Second slide"
             />
@@ -47,8 +40,7 @@ export default function Carousal2() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={carouselImage}
-              className="d-block w-100"
+              className="d-block w-100 home-carousel-size"
               src={placeHolder3}
               alt="Third slide"
             />
