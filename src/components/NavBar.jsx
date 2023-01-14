@@ -81,14 +81,17 @@ export default function NavBar() {
           )}
         </Nav.Link>
 
-        <Navbar.Brand as={Link} to="/" style={{ marginLeft: "20%" }}>
+        {/* <Navbar.Brand  as={Link} to="/"   style={{ marginLeft: "20%" }}> */}
+        <Nav.Link href="1" as={Link} to="/"   style={{ marginLeft: "20%" }}>
+
           <img
             src={Logo}
             style={{ width: "150px" }}
             className="logo img-fluid"
             alt="Logo"
           />
-        </Navbar.Brand>
+          </Nav.Link>
+        {/* </Navbar.Brand> */}
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
