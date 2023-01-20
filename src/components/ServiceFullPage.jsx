@@ -23,8 +23,8 @@ export default function ServiceFullPage() {
     <section className="about-section section-padding">
       <div className="container">
         <div className="py-6 row gx-8 align-items-center">
-          <div className="col-12">
-            <h1 className="text-center">{data.name}</h1>
+          <div className="col-12 mb-5">
+            <h2 className="text-center">{data.name}</h2>
           </div>
           <div className="col-12 order-lg-1 order-2 col-lg-6">
             <p>
@@ -42,7 +42,7 @@ export default function ServiceFullPage() {
               <li>Lorem ipsum dolor sit amet consectetur</li>
             </ul>
           </div>
-          <div className="col-12 order-lg-2 order-1 col-lg-6 ">
+          <div className="col-12 order-lg-2 order-1 col-lg-6 mb-5">
             <div style={carouselContainer}>
               <Carousel>
                 <Carousel.Item interval={1000}>

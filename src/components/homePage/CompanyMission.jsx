@@ -15,14 +15,14 @@ export default function CompanyMission() {
           </div>
           <div className="col-lg-8 col-md-7 col-12">
             <div className="custom-text-block">
-              <p className="text-muted mb-lg-4 mb-md-4 text-center">
+              <div className="text-muted mb-lg-4 mb-md-4 text-center">
                 <img
                   src={safeLogo}
                   style={{ width: "255px" }}
                   className="logo img-fluid"
                   alt="Logo"
                 />
-              </p>
+              </div>
               <p>
                 We continuously strive to be the independent world-class Low
                 Current systems company and technical service of choice by
