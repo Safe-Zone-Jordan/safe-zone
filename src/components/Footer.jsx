@@ -27,8 +27,18 @@ export default function Footer() {
             <h1 className="text-logo">
               Safe Zone<sup className="text-logo-span">&reg;</sup>
             </h1>
-            <h2 className="sup-text-logo">For Engineering & Trading Co.</h2>
+              <h2 className="sup-text-logo">For Engineering & Trading Co.</h2>
+            
+              <br/>
+              <p className="text-white d-flex mb-2" style={{ fontSize: "18px", fontWeight: "normal" }}>
+             
+                    Safe Zone listens to our customer and deliver flexible
+            solutions. We are transparent and seek to earn long
+            term partnerships based on trust and shared values.
+            <br/><br/><br/>
+            </p>
           </div>
+          
           <div className="col-lg-4 col-md-6 col-12 mb-4">
             <h5 className="site-footer-title mb-3">Contact Information</h5>
             <p className="text-white d-flex mb-2">
