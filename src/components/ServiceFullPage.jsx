@@ -32,22 +32,22 @@ export default function ServiceFullPage() {
             <h2 className="text-center">{data1.name}</h2>
           </div>
           <div className="col-12 order-lg-1 order-2 col-lg-6">
-             {thisSolText.paragraph.split('\n').map(str => <p>{str}</p>)}
+             {thisSolText.paragraph.split('\n').map((str, idx) => <p key={idx}>{str}</p>)}
            
            <p style={{fontWeight: "Bold"}}>
               {thisSolText.listTitle}
            </p>
             <ul>
-              {thisSolText.list.map(item => (
-                <li>{item}</li>
+              {thisSolText.list.map((item, idx)=> (
+                <li key={idx}>{item}</li>
               ))}
             </ul>
           </div>
           <div className="col-12 order-lg-2 order-1 col-lg-6 mb-5">
             <div style={carouselContainer}>
               <Carousel fade={true} indicators={false}>
-                {thisSol.map(item => (
-                <Carousel.Item interval={2000} style={{background: "#B7BFD0"}}>
+                {thisSol.map((item, idx) => (
+                <Carousel.Item interval={2000} style={{background: "#B7BFD0"}} key={idx}>
                   <img
                     style={carouselImage}
                     className="d-block w-100"

@@ -550,7 +550,7 @@ progress {
 }
 .grid-img-page-client {
   height: 100%;
-  width: 100%;
+  max-width: 85%;
 }
 .img-thumbnail {
   padding: 0.25rem;

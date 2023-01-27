@@ -4,7 +4,7 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
 import "./css/bootstrap-icons.css";
 import "./css/bootstrap.min.css";
-import "./css/templatemo-kind-heart-charity.css";
+import "./css/safe-zone-template.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

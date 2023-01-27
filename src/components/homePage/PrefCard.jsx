@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import medical from "../../assets/images/icons/medical.webp";
 import data from "../../data/Categories";
 
 function getWindowSize() {
@@ -16,9 +15,6 @@ const PrefCardStyle = {
 
 export default function PrefCard() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  // let data = require("../../data/Categories");
-  console.log(data);
 
   useEffect(() => {
     function handleWindowResize() {
@@ -64,16 +60,16 @@ export default function PrefCard() {
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
                         {item.id !== 7 && (
-                          <p className="mb-4">
-                            {item.description.split("\n").map((str) => (
-                              <p>{str}</p>
-                            ))}
-                          </p>
+                          <>
+                            {item.description.split("\n").map((str, idx) => (
+                              <p className="mb-4" key={idx}>{str}</p>
+                              ))}
+                              </>
                         )}
                         {item.id === 7 && (
                           <ul>
-                            {item.services.map((service) => (
-                              <li>{service}</li>
+                            {item.services.map((service, idx) => (
+                              <li key={idx}>{service}</li>
                             ))}
                           </ul>
                         )}
@@ -108,11 +104,11 @@ export default function PrefCard() {
                         }`}
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
-                        <p className="mb-4">
-                          {item.description.split("\n").map((str) => (
-                            <p>{str}</p>
+                        <>
+                          {item.description.split("\n").map((str,idx) => (
+                            <p className="mb-4" key={idx}>{str}</p>
                           ))}
-                        </p>
+                        </>
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
