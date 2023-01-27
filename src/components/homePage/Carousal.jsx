@@ -14,40 +14,42 @@ export default function Carousal() {
   return (
     <section className="hero-section hero-section-full-height">
       <div id="hero-slide" style={carouselContainer}>
-        <Carousel variant="green">
-          <Carousel.Item>
+        <Carousel variant="green" fade={true}>
+          <Carousel.Item interval={2500}>
             <img
               className="d-block w-100 home-carousel-size"
               src={Carousal1}
               alt="First slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation">Build Systems</h1>
+              <h1 className="text-animation">Audio/Visual Systems</h1>
               <p className="sup-text-animation">
-              Audio/Visual Systems
+              Build Your System
               </p>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item interval={2500}>
             <img
               className="d-block w-100 home-carousel-size"
               src={Carousal2}
               alt="Second slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation">Customize your Systems</h1>
-              <p className="sup-text-animation">Security Systems</p>
+              <h1 className="text-animation">Security Systems</h1>
+              <p className="sup-text-animation">Customize your System</p>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item interval={2500}>
             <img
               className="d-block w-100 home-carousel-size"
               src={Carousal3}
               alt="Third slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation">Customize your Systems</h1>
-              <p className="sup-text-animation">Entrance Solutions</p>
+              <h1 className="text-animation">Entrance Solutions</h1>
+              <p className="sup-text-animation">
+              Maintain Your System
+              </p>
             </div>
           </Carousel.Item>
         </Carousel>

@@ -94,6 +94,11 @@ let partnersHomePage = [
     image: picture7,
   },
   {
+    id: 8,
+    name: "picture8",
+    image: picture8,
+  },
+  {
     id: 9,
     name: "picture9",
     image: picture9,
@@ -102,6 +107,11 @@ let partnersHomePage = [
     id: 11,
     name: "picture11",
     image: picture11,
+  },
+  {
+    id: 12,
+    name: "picture12",
+    image: picture12,
   },
   {
     id: 13,

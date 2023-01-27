@@ -8,7 +8,7 @@ import audio7 from "../assets/solutions/audioVideoSystems/7.jpg";
 import audio8 from "../assets/solutions/audioVideoSystems/8.jpg";
 
 import publicEva1 from "../assets/solutions/publicAddressVoiceEvacuationSystems/1.jpeg";
-import publicEva2 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.jpg";
+import publicEva2 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.png";
 import publicEva3 from "../assets/solutions/publicAddressVoiceEvacuationSystems/3.png";
 
 import fireDet1 from "../assets/solutions/fireDetectionAlarmSystem/1.jpeg";
