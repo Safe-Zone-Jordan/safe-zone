@@ -45,7 +45,7 @@ export default function ServiceFullPage() {
           </div>
           <div className="col-12 order-lg-2 order-1 col-lg-6 mb-5">
             <div style={carouselContainer}>
-              <Carousel fade={true}>
+              <Carousel fade={true} indicators={false}>
                 {thisSol.map(item => (
                 <Carousel.Item interval={2000} style={{background: "#B7BFD0"}}>
                   <img
