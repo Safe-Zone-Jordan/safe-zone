@@ -47,7 +47,7 @@ export default function PrefCard() {
               <React.Fragment key={item.id}>
                 {index % 2 === 0 ? (
                   <div className="row">
-                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter mb-2">
+                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-center mb-2">
                       <img
                         style={PrefCardStyle}
                         src={item.image}
@@ -56,7 +56,7 @@ export default function PrefCard() {
                         loading="lazy"
                       />
                     </div>
-                    <div className="col-12 col-sm-6 align-self-center justify-content-md-ceneter mb-5">
+                    <div className="col-12 col-sm-6 align-self-center justify-content-md-center mb-5">
                       <div
                         className={`steps__content-width ${
                           windowSize.innerWidth < 580 ? "text-center" : ""
@@ -92,7 +92,7 @@ export default function PrefCard() {
                   </div>
                 ) : (
                   <div className="row">
-                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1 mb-2">
+                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1 mb-2">
                       <img
                         style={PrefCardStyle}
                         src={item.image}
@@ -101,7 +101,7 @@ export default function PrefCard() {
                         loading="lazy"
                       />
                     </div>
-                    <div className="col-12 col-sm-6 align-self-center justify-content-md-ceneter md-5">
+                    <div className="col-12 col-sm-6 align-self-center justify-content-md-center mb-5">
                       <div
                         className={`steps__content-width ${
                           windowSize.innerWidth < 580 ? "text-center" : ""

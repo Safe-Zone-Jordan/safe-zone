@@ -27,10 +27,10 @@ export default function Clients(props) {
           <div className="col-12">
             <div className="row">
               {clientsData.map((client) => (
-                <div className="col-6 col-md-4 col-lg-3" key={client.id}>
+                <div className="col-6 col-md-4 col-lg-3 p-4" key={client.id}>
                   <div style={clientsLogo}>
                     <img
-                      className="img-fluid"
+                      className="grid-img-page-client"
                       src={client.image}
                       alt={client.name}
                     />

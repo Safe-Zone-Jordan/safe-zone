@@ -16,12 +16,6 @@ export default function Footer() {
       >
         <div className="row">
           <div className="col-lg-4 col-12 mb-4">
-            {/* <img
-              src={safeLogo}
-              style={{ width: "250px" }}
-              className="logo img-fluid"
-              alt=""
-            /> */}
             <h1 className="text-logo">
               Safe Zone<sup className="text-logo-span">&reg;</sup>
             </h1>
@@ -109,12 +103,9 @@ export default function Footer() {
               Complex, GF
             </p>
             <iframe
+              style={{ marginLeft: "30px" }}
               title="Google Map"
               className="w-screen h-screen z-0 absolute"
-              frameBorder="0"
-              scrolling="no"
-              marginHeight="0"
-              marginWidth="0"
               id="gmap_canvas"
               src="https://maps.google.com/maps?width=1208&amp;height=721&amp;hl=en&amp;q=%20Jordan+Amman+Ash+Shumaysani+Queen+Nour+St.+Housing+Bank+Complex,+Amman&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
@@ -124,6 +115,7 @@ export default function Footer() {
                 display: "block",
                 width: "50%",
                 textAlign: "center",
+                marginLeft: "30px",
               }}
               className="custom-btn btn mt-3"
               href="http://maps.google.com/?q=amman Jordan, Amman, Ash Shumaysani, Queen Nour St., Housing Bank Complex, Ground Floor"

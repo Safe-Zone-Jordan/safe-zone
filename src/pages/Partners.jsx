@@ -31,10 +31,10 @@ export default function Partners() {
           <div className="col-12">
             <div className="row">
               {partners.map((partner) => (
-                <div className="col-6 col-md-4 col-lg-3" key={partner.id}>
+                <div className="col-6 col-md-4 col-lg-3 p-4" key={partner.id}>
                   <div style={partnersLogo}>
                     <img
-                      className="img-fluid"
+                      className="grid-img-page"
                       src={partner.image}
                       alt={partner.name}
                     />
