@@ -4,6 +4,8 @@ import Carousel from "react-bootstrap/Carousel";
 
 import sol from "../data/solutions";
 import solText from "../data/solutionsText";
+import data from "../data/Categories";
+import NotFound from "./NotFound";
 
 const carouselImage = {
   width: "300px",
@@ -16,9 +18,9 @@ const carouselContainer = {
 
 export default function ServiceFullPage() {
   const { name } = useParams();
-  let data = require("../data/Categories.json");
-  data = data.find((item) => item.name.split(" ").join("-") === name);
-  
+  let data1 = data.find((item) => item.name.split(" ").join("-") === name);
+  if(!data1) return <NotFound />;
+
   let thisSol = sol[name];
   let thisSolText = solText[name];
 
@@ -27,7 +29,7 @@ export default function ServiceFullPage() {
       <div className="container">
         <div className="py-6 row gx-8 align-items-center">
           <div className="col-12 mb-5">
-            <h2 className="text-center">{data.name}</h2>
+            <h2 className="text-center">{data1.name}</h2>
           </div>
           <div className="col-12 order-lg-1 order-2 col-lg-6">
              {thisSolText.paragraph.split('\n').map(str => <p>{str}</p>)}

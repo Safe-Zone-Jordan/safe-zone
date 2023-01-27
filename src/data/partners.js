@@ -62,7 +62,123 @@ import picture61 from "../assets/partners/picture61.png";
 import picture62 from "../assets/partners/picture62.jpg";
 import picture63 from "../assets/partners/picture63.png";
 
-const part = [
+let partnersHomePage = [
+  {
+    id: 1,
+    name: "picture1",
+    image: picture1,
+  },
+  {
+    id: 3,
+    name: "picture3",
+    image: picture3,
+  },
+  {
+    id: 4,
+    name: "picture4",
+    image: picture4,
+  },
+  {
+    id: 5,
+    name: "picture5",
+    image: picture5,
+  },
+  {
+    id: 6,
+    name: "picture6",
+    image: picture6,
+  },
+  {
+    id: 7,
+    name: "picture7",
+    image: picture7,
+  },
+  {
+    id: 9,
+    name: "picture9",
+    image: picture9,
+  },
+  {
+    id: 11,
+    name: "picture11",
+    image: picture11,
+  },
+  {
+    id: 13,
+    name: "picture13",
+    image: picture13,
+  },
+  {
+    id: 14,
+    name: "picture14",
+    image: picture14,
+  },
+  {
+    id: 15,
+    name: "picture15",
+    image: picture15,
+  },
+  {
+    id: 16,
+    name: "picture16",
+    image: picture16,
+  },
+  {
+    id: 18,
+    name: "picture18",
+    image: picture18,
+  },
+  {
+    id: 19,
+    name: "picture19",
+    image: picture19,
+  },
+  {
+    id: 24,
+    name: "picture24",
+    image: picture24,
+  },
+  {
+    id: 26,
+    name: "picture26",
+    image: picture26,
+  },
+  {
+    id: 37,
+    name: "picture37",
+    image: picture37,
+  },
+  {
+    id: 42,
+    name: "picture42",
+    image: picture42,
+  },
+  {
+    id: 47,
+    name: "picture47",
+    image: picture47,
+  },
+  {
+    id: 49,
+    name: "picture49",
+    image: picture49,
+  },
+  {
+    id: 59,
+    name: "picture59",
+    image: picture59,
+  },
+  {
+    id: 60,
+    name: "picture60",
+    image: picture60,
+  },
+];
+
+
+
+
+const partners = [
   {
     id: 1,
     name: "picture1",
@@ -380,4 +496,7 @@ const part = [
   }
 ];
 
-export default part;
+export {
+  partnersHomePage,
+  partners,
+}

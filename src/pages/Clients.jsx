@@ -7,12 +7,20 @@ const clientsLogo = {
   margin: "auto",
 };
 export default function Clients(props) {
+  let curLocation = window.location.pathname;
   return (
     <section className={`section-padding ${props.class}`} id="section_3">
       <div className="container">
         <div className="row">
           <div className="col-12">
             <h2 className="text-center">Our Clients</h2>
+            {curLocation !== "/" && (
+            <p>
+              Safe Zone listens to our customer and deliver flexible solutions.
+              We are transparent and seek to earn long term partnerships based
+              on trust and shared values.
+            </p>)}
+            
           </div>
         </div>
         <div className="row">

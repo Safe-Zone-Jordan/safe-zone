@@ -16,7 +16,7 @@ const sol = {
 
   "Public-Address-&-Voice-Evacuation-Systems": {
     paragraph:
-      "Public Address and Voice alarm evacuation systems allow safe and controlled building evacuation to be managed in the case of an emergency.  \n Clear voice pre-recorded messages can be initiated from the system to aid building evacuation. The systems can also be used to provide background music and paging system solutions.",
+      "Public Address and Voice alarm evacuation systems allow safe and controlled building evacuation to be managed in the case of an emergency.  \n Clear voice pre-recorded messages can be initiated from the system to aid building evacuation. The systems can also be used to provide background music and paging system solutions. \n Public address and Voice alarm evacuation systems used to allow a person to communicate or relay to a large public, for example to announcements at large and noisy areas such as airports, stations, terminals, sports stadiums, factory workshops, schools/colleges, live music program, gyms, restaurants, malls , etc. or amplify any other audio content, whether recorded or live.",
     listTitle: "The most components of the PA & Evac. Systems include:",
     list: ["Amplifiers.", "Loud speakers.", "Microphones."],
   },

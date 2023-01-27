@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import safeLogo from "../assets/images/newSafeLogo.png";
 const aTagStyle = {
   textDecoration: "none",
 };
@@ -32,7 +30,7 @@ export default function Footer() {
               <br/>
               <p className="text-white d-flex mb-2" style={{ fontSize: "18px", fontWeight: "normal" }}>
              
-                    Safe Zone listens to our customer and deliver flexible
+            Safe Zone listens to our customer and deliver flexible
             solutions. We are transparent and seek to earn long
             term partnerships based on trust and shared values.
             <br/><br/><br/>
@@ -103,7 +101,7 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6 col-12 mx-auto">
             <p className="text-white d-flex mt-3">
               <i className="bi-geo-alt me-2" />
-              Jordan, Amman, Abu Nseir, ASU Circle
+              Jordan, Amman, Ash Shumaysani, Queen Nour St., Housing Bank Complex, Ground Floor
             </p>
             <iframe
               title="Google Map"
@@ -113,10 +111,8 @@ export default function Footer() {
               marginHeight="0"
               marginWidth="0"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?width=1208&amp;height=721&amp;hl=en&amp;q=%20ASU+Cir.,+Amman&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://maps.google.com/maps?width=1208&amp;height=721&amp;hl=en&amp;q=%20Jordan+Amman+Ash+Shumaysani+Queen+Nour+St.+Housing+Bank+Complex,+Amman&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
-
-            {/* <Link to="#" style={aTagStyle} className="custom-btn btn mt-3"> */}
             <a
               style={{
                 aTagStyle,
@@ -125,52 +121,15 @@ export default function Footer() {
                 textAlign: "center",
               }}
               className="custom-btn btn mt-3"
-              href="http://maps.google.com/?q=amman ASU Cir., Amman"
+              href="http://maps.google.com/?q=amman Jordan, Amman, Ash Shumaysani, Queen Nour St., Housing Bank Complex, Ground Floor"
               target="_blank"
               rel="noreferrer"
             >
               Get Direction
             </a>
-            {/* </Link> */}
           </div>
         </div>
       </div>
-      {/* 
-      
-      <div className="site-footer-bottom">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-7 col-12">
-              <p className="copyright-text mb-0">
-                Copyright © 2022{" "}
-                <Link to="#" style={aTagStyle}>
-                  Geeks Dota
-                </Link>{" "}
-                All rights reserved.
-              </p>
-            </div>
-            <div className="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
-              <ul className="social-icon">
-                <li className="social-icon-item">
-                  <Link
-                    to="#"
-                    style={aTagStyle}
-                    className="social-icon-link bi-facebook"
-                  />
-                </li>
-                <li className="social-icon-item">
-                  <Link
-                    to="#"
-                    style={aTagStyle}
-                    className="social-icon-link bi-linkedin"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      */}
     </footer>
   );
 }

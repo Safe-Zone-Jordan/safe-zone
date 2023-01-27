@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import medical from "../../assets/images/icons/medical.webp";
+import data from "../../data/Categories";
 
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
@@ -10,7 +11,8 @@ function getWindowSize() {
 export default function PrefCard() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
-  let data = require("../../data/Categories.json");
+  // let data = require("../../data/Categories");
+  console.log(data)
 
   useEffect(() => {
     function handleWindowResize() {
@@ -42,7 +44,7 @@ export default function PrefCard() {
                     <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
                       <img
                         style={{ borderRadius: "5%" }}
-                        src={medical}
+                        src={item.image}
                         alt="medical"
                         className="img-fluid"
                         loading="lazy"
@@ -55,12 +57,18 @@ export default function PrefCard() {
                         }`}
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
-                        <p className="mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Officia totam dolorem quasi! Quis fugiat totam
-                          id fuga non distinctio incidunt amet nesciunt itaque,
-                          tempore repellat eos natus quo mollitia laborum.
+                        {item.id !== 7 && ( <p className="mb-4">
+                         {item.description.split('\n').map(str => <p>{str}</p>)}
                         </p>
+                        )}
+                        {item.id === 7 && (
+                        <ul>
+                          {item.services.map((service) => (
+                            <li>{service}</li>
+                          ))}
+                        </ul>
+                          )
+                          }
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
@@ -79,7 +87,7 @@ export default function PrefCard() {
                     <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
                       <img
                         style={{ borderRadius: "5%" }}
-                        src={medical}
+                        src={item.image}
                         alt="Health Benefits"
                         className="img-fluid"
                         loading="lazy"
@@ -93,10 +101,7 @@ export default function PrefCard() {
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
                         <p className="mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Officia totam dolorem quasi! Quis fugiat totam
-                          id fuga non distinctio incidunt amet nesciunt itaque,
-                          tempore repellat eos natus quo mollitia laborum.
+                        {item.description.split('\n').map(str => <p>{str}</p>)}
                         </p>
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}

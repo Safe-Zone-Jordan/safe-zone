@@ -16,8 +16,6 @@ import Picture15 from "../assets/clients/Picture15.png";
 import Picture16 from "../assets/clients/Picture16.png";
 import Picture17 from "../assets/clients/Picture17.png";
 
-
-
 const clientsData = [
 
   {
@@ -96,15 +94,16 @@ const clientsData = [
     image: Picture15,
   },
   {
-    id: 16,
-    name: "Picture16",
-    image: Picture16,
-  },
-  {
     id: 17,
     name: "Picture17",
     image: Picture17,
   },
+  {
+    id: 16,
+    name: "Picture16",
+    image: Picture16,
+  },
+
 ];
 
 export default clientsData;

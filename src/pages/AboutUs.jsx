@@ -47,10 +47,10 @@ export default function AboutUs() {
             <p>
               With more than 6 years of experienced, Safe Zone has built a wide
               reputation of Low Current system professional work. Safe Zone
-              consist of 3 professional Engineers with 9 Professional crews who
-              they can arrange to cover our business core. Safe Zone has
-              accomplished many projects all over Jordan with a worth value of
-              350k JOD more than 35 projects references.
+              consist of professional Engineers and crews who they can arrange
+              to cover our business core. Safe Zone has accomplished many
+              projects all over Jordan and Iraq in government and private
+              sector.
             </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
