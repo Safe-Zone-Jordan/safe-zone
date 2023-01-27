@@ -1,23 +1,39 @@
 [
   {
     "id": 1,
-    "name": "Audio and visual",
+    "name": "Audio Video Systems",
     "description": "Audio and visual"
   },
   {
     "id": 2,
-    "name": "Public Address",
+    "name": "Public Address & Voice Evacuation Systems",
     "description": "Public Address"
   },
 
   {
     "id": 3,
-    "name": "Fire Detection",
+    "name": "Fire Detection Alarm System",
     "description": "Fire Detection"
   },
   {
     "id": 4,
-    "name": "Access Control",
-    "description": "Access Control"
+    "name": "Security System",
+    "description": "Security System"
+  },
+  {
+    "id": 5,
+    "name": "Home Automation & Smart Homes",
+    "description": "Home Automation & Smart Homes"
+  },
+  {
+    "id": 6,
+    "name": "Automatic Entrance Solutions",
+    "description": "Automatic Entrance Solutions"
+  },
+  {
+    "id": 7,
+    "name": "Other ELV Solutions",
+    "description": "Other-solutions"
   }
+
 ]

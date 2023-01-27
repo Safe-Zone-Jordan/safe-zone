@@ -23,7 +23,7 @@ export default function Clients(props) {
                   <div style={clientsLogo}>
                     <img
                       className="img-fluid"
-                      src={client.logo}
+                      src={client.image}
                       alt={client.name}
                     />
                   </div>

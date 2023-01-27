@@ -28,7 +28,7 @@ export default function Partners() {
                   <div style={partnersLogo}>
                     <img
                       className="img-fluid"
-                      src={partner.logo}
+                      src={partner.image}
                       alt={partner.name}
                     />
                   </div>
