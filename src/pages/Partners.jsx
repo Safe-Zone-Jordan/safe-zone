@@ -1,6 +1,6 @@
 import React from "react";
 
-import {partners} from "../data/partners.js";
+import { partners } from "../data/partners.js";
 
 const partnersLogo = {
   position: "relative",
@@ -18,7 +18,7 @@ export default function Partners() {
         <div className="row">
           <div className="col-12">
             <h2 className="text-center">Our Partners</h2>
-            <p>
+            <p className="text-center mx-5 pb-3">
               Safe Zone believes that our people are integral to our success and
               we are committed to their well-being. We develop talent giving
               them the opportunity to grow within the organization. We work

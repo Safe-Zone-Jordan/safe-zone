@@ -15,12 +15,12 @@ export default function Clients(props) {
           <div className="col-12">
             <h2 className="text-center">Our Clients</h2>
             {curLocation !== "/" && (
-            <p>
-              Safe Zone listens to our customer and deliver flexible solutions.
-              We are transparent and seek to earn long term partnerships based
-              on trust and shared values.
-            </p>)}
-            
+              <p className="text-center mx-5 pb-3">
+                Safe Zone listens to our customer and deliver flexible
+                solutions. We are transparent and seek to earn long term
+                partnerships based on trust and shared values.
+              </p>
+            )}
           </div>
         </div>
         <div className="row">
