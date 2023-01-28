@@ -31,6 +31,11 @@ const backBtbStyle = {
   background: "inherit",
 };
 
+const dropdownBgStyle = {
+  width: "175px",
+  backgroundColor: "#ffff",
+};
+
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
   return { innerWidth, innerHeight };
@@ -97,39 +102,64 @@ export default function NavBar() {
             <Nav.Link href="1" as={Link} to="/">
               Home
             </Nav.Link>
-            <NavDropdown title="Sectors" id="collasible-nav-dropdown">
-              <NavDropdown.Item
-                href="#"
-                as={Link}
-                to="/services/Audio-and-visual"
-              >
-                Audio visual
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#"
-                as={Link}
-                to="/services/Public-Address"
-              >
-                Public Address
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#"
-                as={Link}
-                to="/services/Fire-Detection"
-              >
-                Fire Detection
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#"
-                as={Link}
-                to="/services/Access-Control"
-              >
-                Access Control
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
+            <NavDropdown title="Solutions" id="collasible-nav-dropdown">
+              <div style={dropdownBgStyle}>
+                <NavDropdown.Item
+                  href="#"
+                  as={Link}
+                  to="/services/Audio-Video-Systems"
+                >
+                  Audio visual
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#"
+                  as={Link}
+                  to="/services/Public-Address-&-Voice-Evacuation-Systems"
+                >
+                  Public Address
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#"
+                  as={Link}
+                  to="/services/Fire-Detection-Alarm-System"
+                >
+                  Fire Detection
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#"
+                  as={Link}
+                  to="/services/Security-System"
+                >
+                  Security System
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#"
+                  as={Link}
+                  to="/services/Home-Automation-&-Smart-Homes"
+                >
+                  Home Automation
+                </NavDropdown.Item>
+
+                <NavDropdown.Item
+                  href="#"
+                  as={Link}
+                  to="/services/Automatic-Entrance-Solutions"
+                >
+                  Automatic Entrance
+                </NavDropdown.Item>
+
+                <NavDropdown.Item
+                  href="#"
+                  as={Link}
+                  to="/services/Other-ELV-Solutions"
+                >
+                  ELV solutions
+                </NavDropdown.Item>
+              </div>
+              {/* <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/services/Medical">
                 Medical
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href="2" as={Link} to="/Partners">
               Partners

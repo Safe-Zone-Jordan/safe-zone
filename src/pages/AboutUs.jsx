@@ -7,7 +7,7 @@ export default function AboutUs() {
       <header className="pt-10 text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto">
         <h2 className="text-center">About Us</h2>
         <p className="text-muted lead mb-0">
-          Launched in 2015, Safe Zone is a leading Low Current System company in
+          Launched in 2018, Safe Zone is a leading Low Current System company in
           Jordan
         </p>
       </header>
@@ -47,19 +47,25 @@ export default function AboutUs() {
             <p>
               With more than 6 years of experienced, Safe Zone has built a wide
               reputation of Low Current system professional work. Safe Zone
-              consist of 3 professional Engineers with 9 Professional crews who
-              they can arrange to cover our business core. Safe Zone has
-              accomplished many projects all over Jordan with a worth value of
-              350k JOD more than 35 projects references.
+              consist of professional Engineers and crews who they can arrange
+              to cover our business core. Safe Zone has accomplished many
+              projects all over Jordan and Iraq in government and private
+              sector.
             </p>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               quis tortor sed neque pellentesque suscipit. Quisque finibus
               tristique faucibus. Pellentesque rhoncus justo ac ipsum pulvinar
               commodo. Nam quis hendrerit dui. Vestibulum dolor ligula, vehicula
               bibendum iaculis in, placerat et sapien. Maecenas in odio at quam
               volutpat lobortis.
-            </p>
+            </p> */}
+            <ul>
+              <li> Years of Foundation: 2018.</li>
+              <li> Head office: Amman-Jordan.</li>
+              <li> Office, Warehouse and workshop: 120 sqm.</li>
+              <br />
+            </ul>
           </div>
           <div className="col-12 col-lg-6">
             <picture>

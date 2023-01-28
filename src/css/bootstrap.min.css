@@ -544,6 +544,14 @@ progress {
   max-width: 100%;
   height: auto;
 }
+.grid-img-page {
+  max-height: 70px;
+  width: 100%;
+}
+.grid-img-page-client {
+  height: 100%;
+  max-width: 85%;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;

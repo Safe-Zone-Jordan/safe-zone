@@ -8,7 +8,6 @@ import {
 import Footer from "./Footer";
 import HomePage from "../pages/HomePage";
 import NavBar from "./NavBar";
-import Medical from "../pages/Medical";
 import ServiceFullPage from "./ServiceFullPage";
 import ScrollToTop from "../ScrollToTop";
 import Partners from "../pages/Partners";
@@ -23,7 +22,6 @@ export default function AppRoutes() {
         <ScrollToTop />
         <Routes>
           <Route path="/services/:name/*" element={<ServiceFullPage />} />
-          <Route path="/services/Medical/*" element={<Medical />} />
 
           <Route path="/Partners" element={<Partners />} />
           <Route path="/clients" element={<Clients />} />

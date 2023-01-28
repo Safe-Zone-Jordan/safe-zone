@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import medical from "../../assets/images/icons/medical.webp";
+import data from "../../data/Categories";
 
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
   return { innerWidth, innerHeight };
 }
 
+const PrefCardStyle = {
+  borderRadius: "5%",
+  width: "600px",
+  height: "400px",
+};
+
 export default function PrefCard() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  let data = require("../../data/Categories.json");
 
   useEffect(() => {
     function handleWindowResize() {
@@ -38,29 +42,37 @@ export default function PrefCard() {
             return (
               <React.Fragment key={item.id}>
                 {index % 2 === 0 ? (
-                  <>
-                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+                  <div className="row">
+                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-center mb-2">
                       <img
-                        style={{ borderRadius: "5%" }}
-                        src={medical}
+                        style={PrefCardStyle}
+                        src={item.image}
                         alt="medical"
                         className="img-fluid"
                         loading="lazy"
                       />
                     </div>
-                    <div className="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                    <div className="col-12 col-sm-6 align-self-center justify-content-md-center mb-5">
                       <div
                         className={`steps__content-width ${
                           windowSize.innerWidth < 580 ? "text-center" : ""
                         }`}
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
-                        <p className="mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Officia totam dolorem quasi! Quis fugiat totam
-                          id fuga non distinctio incidunt amet nesciunt itaque,
-                          tempore repellat eos natus quo mollitia laborum.
-                        </p>
+                        {item.id !== 7 && (
+                          <>
+                            {item.description.split("\n").map((str, idx) => (
+                              <p className="mb-4" key={idx}>{str}</p>
+                              ))}
+                              </>
+                        )}
+                        {item.id === 7 && (
+                          <ul>
+                            {item.services.map((service, idx) => (
+                              <li key={idx}>{service}</li>
+                            ))}
+                          </ul>
+                        )}
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
@@ -69,44 +81,42 @@ export default function PrefCard() {
                               windowSize.innerWidth < 768 ? "5% 0px" : "0px",
                           }}
                         >
-                          Check Services
+                          See More...
                         </Link>
                       </div>
                     </div>
-                  </>
+                  </div>
                 ) : (
                   <div className="row">
-                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
+                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1 mb-2">
                       <img
-                        style={{ borderRadius: "5%" }}
-                        src={medical}
+                        style={PrefCardStyle}
+                        src={item.image}
                         alt="Health Benefits"
                         className="img-fluid"
                         loading="lazy"
                       />
                     </div>
-                    <div className="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+                    <div className="col-12 col-sm-6 align-self-center justify-content-md-center mb-5">
                       <div
                         className={`steps__content-width ${
                           windowSize.innerWidth < 580 ? "text-center" : ""
                         }`}
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
-                        <p className="mb-4">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Officia totam dolorem quasi! Quis fugiat totam
-                          id fuga non distinctio incidunt amet nesciunt itaque,
-                          tempore repellat eos natus quo mollitia laborum.
-                        </p>
+                        <>
+                          {item.description.split("\n").map((str,idx) => (
+                            <p className="mb-4" key={idx}>{str}</p>
+                          ))}
+                        </>
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
                           style={{
-                            margin:
-                              windowSize.innerWidth < 768 ? "5% 0px" : "",
+                            margin: windowSize.innerWidth < 768 ? "5% 0px" : "",
                           }}
                         >
-                          Check Services
+                          See More...
                         </Link>
                       </div>
                     </div>
