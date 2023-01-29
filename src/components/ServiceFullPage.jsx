@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 import sol from "../data/solutions";
 import solText from "../data/solutionsText";
 import data from "../data/Categories";
-import NotFound from "./NotFound";
+import NotFound from "./homePage/notFound/NotFound";
 
 const carouselImage = {
   width: "300px",
@@ -19,7 +19,7 @@ const carouselContainer = {
 export default function ServiceFullPage() {
   const { name } = useParams();
   let data1 = data.find((item) => item.name.split(" ").join("-") === name);
-  if(!data1) return <NotFound />;
+  if (!data1) return <NotFound />;
 
   let thisSol = sol[name];
   let thisSolText = solText[name];
@@ -32,13 +32,13 @@ export default function ServiceFullPage() {
             <h2 className="text-center">{data1.name}</h2>
           </div>
           <div className="col-12 order-lg-1 order-2 col-lg-6">
-             {thisSolText.paragraph.split('\n').map((str, idx) => <p key={idx}>{str}</p>)}
-           
-           <p style={{fontWeight: "Bold"}}>
-              {thisSolText.listTitle}
-           </p>
+            {thisSolText.paragraph.split("\n").map((str, idx) => (
+              <p key={idx}>{str}</p>
+            ))}
+
+            <p style={{ fontWeight: "Bold" }}>{thisSolText.listTitle}</p>
             <ul>
-              {thisSolText.list.map((item, idx)=> (
+              {thisSolText.list.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
             </ul>
@@ -47,14 +47,18 @@ export default function ServiceFullPage() {
             <div style={carouselContainer}>
               <Carousel fade={true} indicators={false}>
                 {thisSol.map((item, idx) => (
-                <Carousel.Item interval={2000} style={{background: "#B7BFD0"}} key={idx}>
-                  <img
-                    style={carouselImage}
-                    className="d-block w-100"
-                    src={item.image}
-                    alt={item.name}
-                  />
-                </Carousel.Item>
+                  <Carousel.Item
+                    interval={2000}
+                    style={{ background: "#B7BFD0" }}
+                    key={idx}
+                  >
+                    <img
+                      style={carouselImage}
+                      className="d-block w-100"
+                      src={item.image}
+                      alt={item.name}
+                    />
+                  </Carousel.Item>
                 ))}
               </Carousel>
             </div>
