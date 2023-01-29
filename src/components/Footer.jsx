@@ -103,7 +103,6 @@ export default function Footer() {
               Complex, GF
             </p>
             <iframe
-              style={{ marginLeft: "30px" }}
               title="Google Map"
               className="w-screen h-screen z-0 absolute"
               id="gmap_canvas"
@@ -115,7 +114,6 @@ export default function Footer() {
                 display: "block",
                 width: "50%",
                 textAlign: "center",
-                marginLeft: "30px",
               }}
               className="custom-btn btn mt-3"
               href="http://maps.google.com/?q=amman Jordan, Amman, Ash Shumaysani, Queen Nour St., Housing Bank Complex, Ground Floor"
