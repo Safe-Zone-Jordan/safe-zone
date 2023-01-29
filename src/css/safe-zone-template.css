@@ -753,6 +753,25 @@ span {
   line-height: 1.7;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: #ffff;
+  font-weight: bold;
+  padding-top: 5.5px;
+  padding-right: 1px;
+  border-radius: 50%;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 35px;
+  height: 40px;
+}
+
 /*---------------------------------------
   DONATE              
 -----------------------------------------*/

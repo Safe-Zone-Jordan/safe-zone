@@ -13,11 +13,13 @@ import ScrollToTop from "../ScrollToTop";
 import Partners from "../pages/Partners";
 import Clients from "../pages/Clients";
 import AboutUs from "../pages/AboutUs";
+import ScrollBut from "./homePage/ScrollBut";
 
 export default function AppRoutes() {
   return (
     <div className="App">
       <Router>
+        <ScrollBut />
         <NavBar />
         <ScrollToTop />
         <Routes>
