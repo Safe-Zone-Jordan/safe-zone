@@ -43,7 +43,7 @@ export default function PrefCard() {
               <React.Fragment key={item.id}>
                 {index % 2 === 0 ? (
                   <div className="row">
-                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-center mb-2">
+                    <div className="col-12 col-md-6 mb-2">
                       <img
                         style={PrefCardStyle}
                         src={item.image}
@@ -52,11 +52,9 @@ export default function PrefCard() {
                         loading="lazy"
                       />
                     </div>
-                    <div className="col-12 col-sm-6 align-self-center justify-content-md-center mb-5">
+                    <div className="col-12 col-md-6 mb-5">
                       <div
-                        className={`steps__content-width ${
-                          windowSize.innerWidth < 580 ? "text-center" : ""
-                        }`}
+                        className="steps__content-width"
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
                         {item.id !== 7 && (
@@ -76,10 +74,10 @@ export default function PrefCard() {
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
-                          style={{
-                            margin:
-                              windowSize.innerWidth < 768 ? "5% 0px" : "0px",
-                          }}
+                          // style={{
+                          //   margin:
+                          //     windowSize.innerWidth < 768 ? "5% 0px" : "0px",
+                          // }}
                         >
                           See More...
                         </Link>
@@ -88,7 +86,7 @@ export default function PrefCard() {
                   </div>
                 ) : (
                   <div className="row">
-                    <div className="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1 mb-2">
+                    <div className="col-12 col-md-6  order-md-1 mb-2">
                       <img
                         style={PrefCardStyle}
                         src={item.image}
@@ -97,11 +95,9 @@ export default function PrefCard() {
                         loading="lazy"
                       />
                     </div>
-                    <div className="col-12 col-sm-6 align-self-center justify-content-md-center mb-5">
+                    <div className="col-12 col-md-6 mb-5">
                       <div
-                        className={`steps__content-width ${
-                          windowSize.innerWidth < 580 ? "text-center" : ""
-                        }`}
+                        className="steps__content-width"
                       >
                         <h1 className="h2 mb-4">{item.name}</h1>
                         <>
@@ -112,9 +108,9 @@ export default function PrefCard() {
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
-                          style={{
-                            margin: windowSize.innerWidth < 768 ? "5% 0px" : "",
-                          }}
+                          // style={{
+                          //   margin: windowSize.innerWidth < 768 ? "5% 0px" : "",
+                          // }}
                         >
                           See More...
                         </Link>
