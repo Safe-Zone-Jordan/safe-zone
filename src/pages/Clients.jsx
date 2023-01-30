@@ -6,16 +6,16 @@ const clientsLogo = {
   height: "60%",
   margin: "auto",
 };
-export default function Clients(props) {
-  let curLocation = window.location.pathname;
+export default function ClientsHome(props) {
+  let curLocation = window.location.pathname;  
   return (
     <section className={`section-padding ${props.class}`} id="section_3">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="text-center">Our Clients</h2>
+            <h2 className="text-center" data-aos="fade-in">Our Clients</h2>
             {curLocation !== "/" && (
-              <p className="text-center mx-5 pb-3">
+              <p className="mx-5 pb-3" data-aos="fade-in">
                 Safe Zone listens to our customer and deliver flexible
                 solutions. We are transparent and seek to earn long term
                 partnerships based on trust and shared values.
@@ -33,6 +33,7 @@ export default function Clients(props) {
                       className="grid-img-page-client"
                       src={client.image}
                       alt={client.name}
+                      data-aos="fade-in"
                     />
                   </div>
                 </div>

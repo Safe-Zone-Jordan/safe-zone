@@ -17,7 +17,7 @@ export default function Partners() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="text-center">Our Partners</h2>
+            <h2 className="text-center" data-aos="fade-in">Our Partners</h2>
           </div>
         </div>
         <div className="row">
@@ -30,6 +30,7 @@ export default function Partners() {
                       className="grid-img-page"
                       src={partner.image}
                       alt={partner.name}
+                      data-aos="fade-in"
                     />
                   </div>
                 </div>

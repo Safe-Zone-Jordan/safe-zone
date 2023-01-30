@@ -2,7 +2,6 @@ import React from "react";
 // import medical from "../assets/images/icons/medical.webp";
 // import medical from "../assets/images/icons/MEDICAL.jpg";
 import medical from "../assets/images/icons/pexels.jpg";
-import bg from "../assets/images/icons/pexels-anni.jpg";
 
 export default function AboutUs() {
   return (
@@ -41,8 +40,7 @@ export default function AboutUs() {
         <div className="py-6 row gx-8 align-items-center">
           <div className="col-12 col-lg-6">
             <p
-              style={{ color: "#5bc1ac" }}
-              className="mb-3 small fw-bolder tracking-wider text-uppercase "
+              className="mb-3 small fw-bolder tracking-wider text-uppercase home-page-solutions-headers"
             >
               How it started
             </p>

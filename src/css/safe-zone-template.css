@@ -1774,3 +1774,7 @@ blockquote::before {
     height: 250px;
   }
 }
+.home-page-solutions-headers {
+  color: #5bc1ac;
+  font-weight: 600;
+}
