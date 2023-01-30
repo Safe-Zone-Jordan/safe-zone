@@ -9,8 +9,8 @@
 }
 
 svg {
-  width: 500px;
-  height: 400px;
+  width: 60%;
+  height: 60%;
   text-align: center;
   fill: #5bc1ac;
 }
@@ -53,7 +53,7 @@ path#XMLID_2_ {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  margin: 0 50px;
+  margin: 0 5px;
 }
 
 @-webkit-keyframes opacity {
