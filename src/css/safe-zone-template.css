@@ -753,6 +753,7 @@ span {
   line-height: 1.7;
 }
 
+
 .scroll-to-top {
   position: fixed;
   bottom: 30px;
@@ -770,7 +771,7 @@ span {
   transition: 0.3s;
   width: 35px;
   height: 40px;
-  z-index: 2;
+  z-index: 5;
 }
 .full-page-carousel-image {
   height: 400px;
@@ -1574,11 +1575,6 @@ blockquote::before {
   blockquote {
     padding: 70px 30px 30px 30px;
   }
-
-  /* .about-image {
-    width: inherit;
-    height: 450px;
-  } */
 
   .volunteer-image {
     width: 250px;

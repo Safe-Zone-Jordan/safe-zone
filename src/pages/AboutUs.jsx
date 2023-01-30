@@ -1,9 +1,12 @@
 import React from "react";
-import medical from "../assets/images/icons/medical.webp";
+// import medical from "../assets/images/icons/medical.webp";
+// import medical from "../assets/images/icons/MEDICAL.jpg";
+import medical from "../assets/images/icons/pexels.jpg";
+import bg from "../assets/images/icons/pexels-anni.jpg";
 
 export default function AboutUs() {
   return (
-    <section className="section-padding" id="section_3">
+    <section className="section-padding" id="section_3" >
       <header className="pt-10 text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto">
         <h2 className="text-center">About Us</h2>
         <p className="text-muted lead mb-0">

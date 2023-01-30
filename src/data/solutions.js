@@ -8,22 +8,22 @@ import audio7 from "../assets/solutions/audioVideoSystems/7.jpg";
 import audio8 from "../assets/solutions/audioVideoSystems/8.jpg";
 
 import publicEva1 from "../assets/solutions/publicAddressVoiceEvacuationSystems/1.jpeg";
-import publicEva2 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.png";
+import publicEva2 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.jpg";
 import publicEva3 from "../assets/solutions/publicAddressVoiceEvacuationSystems/3.png";
 import publicEva4 from "../assets/solutions/publicAddressVoiceEvacuationSystems/1.jpeg";
-import publicEva5 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.png";
+import publicEva5 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.jpg";
 import publicEva6 from "../assets/solutions/publicAddressVoiceEvacuationSystems/3.png";
 import publicEva7 from "../assets/solutions/publicAddressVoiceEvacuationSystems/1.jpeg";
-import publicEva8 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.png";
+import publicEva8 from "../assets/solutions/publicAddressVoiceEvacuationSystems/2.jpg";
 
 import fireDet1 from "../assets/solutions/fireDetectionAlarmSystem/1.jpeg";
 import fireDet2 from "../assets/solutions/fireDetectionAlarmSystem/2.jpeg";
 import fireDet3 from "../assets/solutions/fireDetectionAlarmSystem/3.jpg";
-import fireDet4 from "../assets/solutions/fireDetectionAlarmSystem/1.jpeg";
-import fireDet5 from "../assets/solutions/fireDetectionAlarmSystem/2.jpeg";
-import fireDet6 from "../assets/solutions/fireDetectionAlarmSystem/3.jpg";
-import fireDet7 from "../assets/solutions/fireDetectionAlarmSystem/1.jpeg";
-import fireDet8 from "../assets/solutions/fireDetectionAlarmSystem/2.jpeg";
+import fireDet4 from "../assets/solutions/fireDetectionAlarmSystem/4.jpg";
+import fireDet5 from "../assets/solutions/fireDetectionAlarmSystem/1.jpeg";
+import fireDet6 from "../assets/solutions/fireDetectionAlarmSystem/2.jpeg";
+import fireDet7 from "../assets/solutions/fireDetectionAlarmSystem/3.jpg";
+import fireDet8 from "../assets/solutions/fireDetectionAlarmSystem/4.jpg";
 
 import security1 from "../assets/solutions/securitySystem/1.jpg";
 import security2 from "../assets/solutions/securitySystem/2.jpg";
