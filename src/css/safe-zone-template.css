@@ -753,6 +753,7 @@ span {
   line-height: 1.7;
 }
 
+
 .scroll-to-top {
   position: fixed;
   bottom: 30px;
@@ -770,6 +771,10 @@ span {
   transition: 0.3s;
   width: 35px;
   height: 40px;
+  z-index: 5;
+}
+.full-page-carousel-image {
+  height: 400px;
 }
 
 /*---------------------------------------
@@ -1571,11 +1576,6 @@ blockquote::before {
     padding: 70px 30px 30px 30px;
   }
 
-  /* .about-image {
-    width: inherit;
-    height: 450px;
-  } */
-
   .volunteer-image {
     width: 250px;
     height: 250px;
@@ -1751,4 +1751,30 @@ blockquote::before {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+@media screen and (max-width: 1400px) {
+  .full-page-carousel-image {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .full-page-carousel-image {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .full-page-carousel-image {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .full-page-carousel-image {
+    height: 250px;
+  }
+}
+.home-page-solutions-headers {
+  color: #5bc1ac;
+  font-weight: 600;
 }

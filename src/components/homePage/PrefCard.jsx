@@ -32,10 +32,9 @@ export default function PrefCard() {
         <div className="row">
           <div
             style={{ paddingBottom: "50px" }}
-            className="col-12  text-center "
+            className="col-12  text-center"
           >
-            <h2>Our Solutions</h2>
-            <div></div>
+            <h2 data-aos="fade-in">Our Solutions</h2>
           </div>
 
           {data.map((item, index) => {
@@ -50,30 +49,32 @@ export default function PrefCard() {
                         alt="medical"
                         className="img-fluid"
                         loading="lazy"
+                        data-aos="fade-right"
                       />
                     </div>
                     <div className="col-12 col-md-6 mb-5">
                       <div
                         className="steps__content-width"
                       >
-                        <h1 className="h2 mb-4">{item.name}</h1>
+                        <h1 className="h2 mb-4 home-page-solutions-headers" data-aos={`${windowSize.innerWidth < 768? "fade-right": "fade-left"}`}>{item.name}</h1>
                         {item.id !== 7 && (
                           <>
                             {item.description.split("\n").map((str, idx) => (
-                              <p className="mb-4" key={idx}>{str}</p>
+                              <p className="mb-4" key={idx}  data-aos={`${windowSize.innerWidth < 768? "fade-right": "fade-left"}`}>{str}</p>
                               ))}
                               </>
                         )}
                         {item.id === 7 && (
                           <ul>
                             {item.services.map((service, idx) => (
-                              <li key={idx}>{service}</li>
+                              <li key={idx} data-aos={`${windowSize.innerWidth < 768? "fade-right": "fade-left"}`}>{service}</li>
                             ))}
                           </ul>
                         )}
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
+                          data-aos={`${windowSize.innerWidth < 768? "fade-right": "fade-left"}`}
                           // style={{
                           //   margin:
                           //     windowSize.innerWidth < 768 ? "5% 0px" : "0px",
@@ -93,21 +94,23 @@ export default function PrefCard() {
                         alt="Health Benefits"
                         className="img-fluid"
                         loading="lazy"
+                        data-aos={`${windowSize.innerWidth < 768? "fade-right": "fade-left"}`}
                       />
                     </div>
                     <div className="col-12 col-md-6 mb-5">
                       <div
                         className="steps__content-width"
                       >
-                        <h1 className="h2 mb-4">{item.name}</h1>
+                        <h1 className="h2 mb-4 home-page-solutions-headers" data-aos="fade-right">{item.name}</h1>
                         <>
                           {item.description.split("\n").map((str,idx) => (
-                            <p className="mb-4" key={idx}>{str}</p>
+                            <p className="mb-4" key={idx} data-aos="fade-right">{str}</p>
                           ))}
                         </>
                         <Link
                           to={`/services/${item.name.split(" ").join("-")}`}
                           className="custom-btn btn"
+                          data-aos="fade-right"
                           // style={{
                           //   margin: windowSize.innerWidth < 768 ? "5% 0px" : "",
                           // }}

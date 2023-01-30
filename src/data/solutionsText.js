@@ -16,8 +16,9 @@ const sol = {
 
   "Public-Address-&-Voice-Evacuation-Systems": {
     paragraph:
-      "Public Address and Voice alarm evacuation systems allow safe and controlled building evacuation to be managed in the case of an emergency.  \n Clear voice pre-recorded messages can be initiated from the system to aid building evacuation. The systems can also be used to provide background music and paging system solutions. \n Public address and Voice alarm evacuation systems used to allow a person to communicate or relay to a large public, for example to announcements at large and noisy areas such as airports, stations, terminals, sports stadiums, factory workshops, schools/colleges, live music program, gyms, restaurants, malls , etc. or amplify any other audio content, whether recorded or live.",
-    listTitle: "The most components of the PA & Evac. Systems include:",
+     "Public Address and Voice alarm evacuation systems allow safe and controlled building evacuation to be managed in the case of an emergency. \n Clear voice pre-recorded messages can be initiated from the system to aid building evacuation. The systems can also be used to provide background music and paging system solutions and  allow a person to communicate or relay to a large public, for example to announcements at large and noisy areas or amplify any other audio content, whether recorded or live."
+   ,
+     listTitle: "The most components of the PA & Evac. Systems include:",
     list: ["Amplifiers.", "Loud speakers.", "Microphones."],
   },
   "Fire-Detection-Alarm-System": {
@@ -35,7 +36,7 @@ const sol = {
   },
   "Security-System": {
     paragraph:
-      "The most basic definition of any security system is found in its name. It is literally a means or method by which something is secured through a system of interworking components and devices. \n Security alarms used in residential, commercial, industrial, and military properties protect against burglary (theft) or property damage, as well as personal protection against intruders. Security alerts in neighborhoods show a connection with diminished robbery. Car alarms likewise help protect vehicles and their contents. Prisons also use security systems for the control of inmates.",
+     "The most basic definition of any security system is found in its name. It is literally a means or method by which something is secured through a system of interworking components and devices.\n Security alarms used in residential, commercial, industrial, and military properties protect against burglary (theft) or property damage, as well as personal protection against intruders. Security alerts in neighborhoods show a connection with diminished robbery.",
     listTitle: "The most common types of Security Systems include:",
     list: [
       "Video Surveillance System (CCTV).",
