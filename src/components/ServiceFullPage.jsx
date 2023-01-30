@@ -7,10 +7,6 @@ import solText from "../data/solutionsText";
 import data from "../data/Categories";
 import NotFound from "./homePage/notFound/NotFound";
 
-const carouselImage = {
-  width: "300px",
-  height: "300px",
-};
 const carouselContainer = {
   width: "100%",
   height: "100%",
@@ -53,8 +49,7 @@ export default function ServiceFullPage() {
                     key={idx}
                   >
                     <img
-                      style={carouselImage}
-                      className="d-block w-100"
+                      className="d-block w-100 full-page-carousel-image"
                       src={item.image}
                       alt={item.name}
                     />

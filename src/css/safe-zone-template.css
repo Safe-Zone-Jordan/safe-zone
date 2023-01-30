@@ -770,6 +770,10 @@ span {
   transition: 0.3s;
   width: 35px;
   height: 40px;
+  z-index: 2;
+}
+.full-page-carousel-image {
+  height: 400px;
 }
 
 /*---------------------------------------
@@ -1750,5 +1754,27 @@ blockquote::before {
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .full-page-carousel-image {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .full-page-carousel-image {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .full-page-carousel-image {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .full-page-carousel-image {
+    height: 250px;
   }
 }
