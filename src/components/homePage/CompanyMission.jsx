@@ -7,20 +7,18 @@ function getWindowSize() {
   return { innerWidth, innerHeight };
 }
 
-
 export default function CompanyMission() {
-  
-    const [windowSize, setWindowSize] = useState(getWindowSize());
-  
-    useEffect(() => {
-      function handleWindowResize() {
-        setWindowSize(getWindowSize());
-      }
-      window.addEventListener("resize", handleWindowResize);
-      return () => {
-        window.removeEventListener("resize", handleWindowResize);
-      };
-    }, []);
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
     <section className=" about-main-section">
@@ -30,7 +28,7 @@ export default function CompanyMission() {
             <img
               src={safeZone}
               className="about-image ms-lg-auto ms-md-auto bg-light shadow-lg about-missions-image"
-              alt=""
+              alt="company logo"
               data-aos="fade-right"
             />
           </div>
@@ -45,14 +43,22 @@ export default function CompanyMission() {
                   data-aos="fade-in"
                 />
               </div>
-              <p data-aos={`${windowSize.innerWidth < 768? "fade-right": "fade-left"}`}>
+              <p
+                data-aos={`${
+                  windowSize.innerWidth < 768 ? "fade-right" : "fade-left"
+                }`}
+              >
                 We continuously strive to be the independent world-class Low
                 Current systems company and technical service of choice by
                 delivering safe, efficient, flexible, and technology-enabled
                 quality services to our customers, with responsibility towards
                 the environment, the society, and the shareholders.
               </p>
-              <p data-aos={`${windowSize.innerWidth < 768? "fade-right": "fade-left"}`}>
+              <p
+                data-aos={`${
+                  windowSize.innerWidth < 768 ? "fade-right" : "fade-left"
+                }`}
+              >
                 We will perpetually grow by investing in our people in order to
                 develop a distinguished, passionate, dedicated, and highly
                 competent team.
