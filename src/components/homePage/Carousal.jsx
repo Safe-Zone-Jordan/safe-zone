@@ -12,7 +12,7 @@ const carouselContainer = {
 
 export default function Carousal() {
   return (
-    <section className="hero-section hero-section-full-height">
+    <section className="hero-section hero-section-full-height" data-aos="fade-in">
       <div id="hero-slide" style={carouselContainer}>
         <Carousel variant="green" fade={true}>
           <Carousel.Item interval={2500}>
@@ -22,8 +22,8 @@ export default function Carousal() {
               alt="First slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation">Audio/Visual Systems</h1>
-              <p className="sup-text-animation">
+              <h1 className="text-animation carousalText">Audio/Visual Systems</h1>
+              <p className="sup-text-animation carousalText">
               Build Your System
               </p>
             </div>
@@ -35,8 +35,8 @@ export default function Carousal() {
               alt="Second slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation">Security Systems</h1>
-              <p className="sup-text-animation">Customize your System</p>
+              <h1 className="text-animation carousalText">Security Systems</h1>
+              <p className="sup-text-animation carousalText">Customize your System</p>
             </div>
           </Carousel.Item>
           <Carousel.Item interval={2500}>
@@ -46,8 +46,8 @@ export default function Carousal() {
               alt="Third slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation">Entrance Solutions</h1>
-              <p className="sup-text-animation">
+              <h1 className="text-animation carousalText">Entrance Solutions</h1>
+              <p className="sup-text-animation carousalText">
               Maintain Your System
               </p>
             </div>

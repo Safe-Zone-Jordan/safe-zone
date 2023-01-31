@@ -19,19 +19,13 @@ export default function PublicAddress() {
           </div>
           <div className="col-12 order-lg-1 order-2 col-lg-6">
             {data.paragraph.split("\n").map((str, idx) => (
-              <p key={idx} data-aos="fade-right">
-                {str}
-              </p>
+              <p key={idx}>{str}</p>
             ))}
 
-            <p style={{ fontWeight: "Bold" }} data-aos="fade-right">
-              {data.listTitle}
-            </p>
+            <p style={{ fontWeight: "Bold" }}>{data.listTitle}</p>
             <ul>
               {data.list.map((item, idx) => (
-                <li key={idx} data-aos="fade-right">
-                  {item}
-                </li>
+                <li key={idx}>{item}</li>
               ))}
             </ul>
           </div>

@@ -26,14 +26,14 @@ import smartHouse2 from "../assets/solutions/homeAutomationSmartHomes/2.jpg";
 import smartHouse3 from "../assets/solutions/homeAutomationSmartHomes/3.jpg";
 import smartHouse4 from "../assets/solutions/homeAutomationSmartHomes/4.jpg";
 
-import entrence1 from "../assets/solutions/automaticEntranceSolutions/1.jpg";
-import entrence2 from "../assets/solutions/automaticEntranceSolutions/2.jpg";
-import entrence3 from "../assets/solutions/automaticEntranceSolutions/3.jpg";
-import entrence4 from "../assets/solutions/automaticEntranceSolutions/4.jpg";
-import entrence5 from "../assets/solutions/automaticEntranceSolutions/5.jpg";
-import entrence6 from "../assets/solutions/automaticEntranceSolutions/6.jpg";
-import entrence7 from "../assets/solutions/automaticEntranceSolutions/7.jpg";
-import entrence8 from "../assets/solutions/automaticEntranceSolutions/8.jpg";
+import entrance1 from "../assets/solutions/automaticEntranceSolutions/1.jpg";
+import entrance2 from "../assets/solutions/automaticEntranceSolutions/2.jpg";
+import entrance3 from "../assets/solutions/automaticEntranceSolutions/3.jpg";
+import entrance4 from "../assets/solutions/automaticEntranceSolutions/4.jpg";
+import entrance5 from "../assets/solutions/automaticEntranceSolutions/5.jpg";
+import entrance6 from "../assets/solutions/automaticEntranceSolutions/6.jpg";
+import entrance7 from "../assets/solutions/automaticEntranceSolutions/7.jpg";
+import entrance8 from "../assets/solutions/automaticEntranceSolutions/8.jpg";
 
 import ELV1 from "../assets/solutions/otherELVsolutions/1.jpeg";
 import ELV2 from "../assets/solutions/otherELVsolutions/2.jpg";
@@ -204,8 +204,8 @@ const homeAutomation = {
   paragraph:
     "A home automation system monitor and/or control home attributes such as lighting, climate, entertainment systems, and appliances. It may also include home security such as access control and alarm systems. When connected with the Internet, home devices are an important constituent of the Internet of Things. \n A home automation system typically connects controlled devices to a central smart home hub. The user interface for control of the system uses either wall-mounted terminals, tablet or desktop computers, a mobile phone application, or a Web interface that may also be accessible off-site through the Internet.",
   listTitle:
-    "The most components of the Home Automation & Smart Homes include:",
-  list: ["Switch Actuators.", "Keypads.", "Hub."],
+    "",
+  list: [],
   pictures: [
     {
       id: 1,
@@ -250,43 +250,43 @@ const automaticEntrance = {
   pictures: [
     {
       id: 1,
-      name: "entrence1",
-      image: entrence1,
+      name: "entrance1",
+      image: entrance1,
     },
     {
       id: 2,
-      name: "entrence2",
-      image: entrence2,
+      name: "entrance2",
+      image: entrance2,
     },
     {
       id: 3,
-      name: "entrence3",
-      image: entrence3,
+      name: "entrance3",
+      image: entrance3,
     },
     {
       id: 4,
-      name: "entrence4",
-      image: entrence4,
+      name: "entrance4",
+      image: entrance4,
     },
     {
       id: 5,
-      name: "entrence5",
-      image: entrence5,
+      name: "entrance5",
+      image: entrance5,
     },
     {
       id: 6,
-      name: "entrence6",
-      image: entrence6,
+      name: "entrance6",
+      image: entrance6,
     },
     {
       id: 7,
-      name: "entrence7",
-      image: entrence7,
+      name: "entrance7",
+      image: entrance7,
     },
     {
       id: 8,
-      name: "entrence8",
-      image: entrence8,
+      name: "entrance8",
+      image: entrance8,
     },
   ],
 };

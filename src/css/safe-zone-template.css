@@ -1619,11 +1619,14 @@ blockquote::before {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 991px) {
   .hero-section-full-height,
   #hero-slide .carousel-item,
   .carousel-image {
     min-height: 520px;
+  }
+  .carousalText {
+    font-size: 22px;
   }
 
   #hero-slide .carousel-caption {
