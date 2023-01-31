@@ -156,10 +156,6 @@ export default function NavBar() {
                   ELV solutions
                 </NavDropdown.Item>
               </div>
-              {/* <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/services/Medical">
-                Medical
-              </NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href="2" as={Link} to="/Partners">
               Partners
