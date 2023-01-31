@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { partners } from "../data/partners.js";
 
 const partnersLogo = {
@@ -14,7 +13,7 @@ const partnersLogo = {
 
 export default function Partners() {
   return (
-    <section className="section-padding" id="section_3">
+    <section className="section-padding" id="section_3" data-aos="fade-in">
       <div className="container">
         <div className="row">
           <div className="col-12">

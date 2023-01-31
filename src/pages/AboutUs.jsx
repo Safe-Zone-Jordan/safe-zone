@@ -5,7 +5,7 @@ import medical from "../assets/images/icons/pexels.jpg";
 
 export default function AboutUs() {
   return (
-    <section className="section-padding" id="section_3" >
+    <section className="section-padding" id="section_3" data-aos="fade-in">
       <header className="pt-10 text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto">
         <h2 className="text-center">About Us</h2>
         <p className="text-muted lead mb-0">
@@ -39,9 +39,7 @@ export default function AboutUs() {
 
         <div className="py-6 row gx-8 align-items-center">
           <div className="col-12 col-lg-6">
-            <p
-              className="mb-3 small fw-bolder tracking-wider text-uppercase home-page-solutions-headers"
-            >
+            <p className="mb-3 small fw-bolder tracking-wider text-uppercase home-page-solutions-headers">
               How it started
             </p>
             <h2 className="display-5 fw-bold mb-6">Our story</h2>

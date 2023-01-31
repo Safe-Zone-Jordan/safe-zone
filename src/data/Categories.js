@@ -6,7 +6,7 @@ import Picture8 from "../assets/homePage/08.jpg";
 import Picture9 from "../assets/homePage/09.jpg";
 import Picture10 from "../assets/homePage/010.jpg";
 
-const catigo = [
+const catagories = [
   {
     id: 1,
     name: "Audio Video Systems",
@@ -53,4 +53,4 @@ const catigo = [
 
 ]
 
-export default catigo;
+export default catagories;
