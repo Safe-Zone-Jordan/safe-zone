@@ -18,10 +18,6 @@ export default function OtherELV() {
             <h2 className="text-center">{data.name}</h2>
           </div>
           <div className="col-12 order-lg-1 order-2 col-lg-6 top-align">
-            {data.paragraph.split("\n").map((str, idx) => (
-              <p key={idx}>{str}</p>
-            ))}
-
             <p style={{ fontWeight: "Bold" }}>{data.listTitle}</p>
             <ul>
               {data.list.map((item, idx) => (
