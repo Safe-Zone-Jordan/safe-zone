@@ -185,9 +185,6 @@ let partnersHomePage = [
   },
 ];
 
-
-
-
 const partners = [
   {
     id: 1,
@@ -439,7 +436,7 @@ const partners = [
     name: "picture50",
     image: picture50,
   },
-  { 
+  {
     id: 51,
     name: "picture51",
     image: picture51,
@@ -503,10 +500,7 @@ const partners = [
     id: 63,
     name: "picture63",
     image: picture63,
-  }
+  },
 ];
 
-export {
-  partnersHomePage,
-  partners,
-}
+export { partnersHomePage, partners };
