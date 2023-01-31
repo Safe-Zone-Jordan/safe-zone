@@ -8,8 +8,6 @@ import picture7 from "../assets/partners/picture7.png";
 import picture8 from "../assets/partners/picture8.png";
 import picture9 from "../assets/partners/picture9.png";
 import picture10 from "../assets/partners/picture10.png";
-import picture11 from "../assets/partners/picture11.png";
-import picture12 from "../assets/partners/picture12.png";
 import picture13 from "../assets/partners/picture13.png";
 import picture14 from "../assets/partners/picture14.png";
 import picture15 from "../assets/partners/picture15.png";
@@ -104,16 +102,6 @@ let partnersHomePage = [
     image: picture9,
   },
   {
-    id: 11,
-    name: "picture11",
-    image: picture11,
-  },
-  {
-    id: 12,
-    name: "picture12",
-    image: picture12,
-  },
-  {
     id: 13,
     name: "picture13",
     image: picture13,
@@ -142,6 +130,11 @@ let partnersHomePage = [
     id: 19,
     name: "picture19",
     image: picture19,
+  },
+  {
+    id: 21,
+    name: "picture21",
+    image: picture21,
   },
   {
     id: 24,
@@ -235,16 +228,6 @@ const partners = [
     id: 10,
     name: "picture10",
     image: picture10,
-  },
-  {
-    id: 11,
-    name: "picture11",
-    image: picture11,
-  },
-  {
-    id: 12,
-    name: "picture12",
-    image: picture12,
   },
   {
     id: 13,
