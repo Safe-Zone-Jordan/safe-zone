@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 import Carousal1 from "../../assets/homePage/01.jpg";
 import Carousal2 from "../../assets/homePage/02.jpg";
-import Carousal3 from "../../assets/homePage/03.png";
+import Carousal3 from "../../assets/homePage/03.jpg";
 
 const carouselContainer = {
   width: "100%",
