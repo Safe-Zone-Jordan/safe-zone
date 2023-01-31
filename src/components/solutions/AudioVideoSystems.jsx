@@ -13,7 +13,7 @@ export default function AudioVideoSystems() {
   return (
     <section className="about-section section-padding" data-aos="fade-in">
       <div className="container">
-        <div className="py-6 row gx-8 align-items-center">
+        <div className="py-6 row gx-8 align-items-start">
           <div className="col-12 mb-5">
             <h2 className="text-center">{data.name}</h2>
           </div>
