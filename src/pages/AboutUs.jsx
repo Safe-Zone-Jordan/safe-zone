@@ -60,7 +60,7 @@ export default function AboutUs() {
               volutpat lobortis.
             </p> */}
             <ul>
-              <li> Years of Foundation: 2018.</li>
+              <li> Year of Foundation: 2018.</li>
               <li> Head office: Amman-Jordan.</li>
               <li> Office, Warehouse and workshop: 120 sqm.</li>
               <br />
