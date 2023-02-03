@@ -72,7 +72,7 @@ export default function NotFound() {
           />
         </g>
       </svg>
-      <div className="message">You Are In A Dangerous Zone</div>
+      <div className="message">You Are In A Danger Zone</div>
       <button
         onClick={() => {
           navigate("/");
