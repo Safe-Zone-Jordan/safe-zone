@@ -546,11 +546,11 @@ progress {
 }
 .grid-img-page {
   max-height: 70px;
-  width: 100%;
+  width: 100px;
 }
 .grid-img-page-client {
-  height: 100%;
-  max-width: 85%;
+  height: 100px;
+  max-width: 100px;
 }
 .img-thumbnail {
   padding: 0.25rem;
