@@ -32,7 +32,7 @@ export default function ClientsHome(props) {
                 <div className="col-6 col-md-4 col-lg-3 p-1" key={client.id}>
                   <div style={clientsLogo}>
                     <img
-                      className="grid-img-page-client-ios-ios"
+                      className="grid-img-page-client-ios"
                       src={client.image}
                       alt={client.name}
                       data-aos="fade-in"
