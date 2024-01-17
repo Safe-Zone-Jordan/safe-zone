@@ -471,7 +471,7 @@ span {
   padding-top: 5.5px;
   padding-right: 1px;
   border-radius: 50%;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   cursor: pointer;
   transition: 0.3s;
   width: 35px;
@@ -492,8 +492,8 @@ span {
 }
 .text-logo {
   letter-spacing: 2px;
-  font-family: "Dancing Script", cursive;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Dancing Script", cursive; */
+  /* font-family: "Josefin Sans", sans-serif; */
   font-size: 30px;
   font-weight: 700;
   color: var(--primary-color);

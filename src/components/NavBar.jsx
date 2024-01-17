@@ -64,6 +64,7 @@ export default function NavBar() {
       variant="light"
       style={windowSize.innerWidth > 992 ? { ...fullSize } : { ...smallSize }}
       sticky="top"
+      className="fw-semibold"
     >
       <Container fluid>
         <Nav.Link>
@@ -90,7 +91,7 @@ export default function NavBar() {
         {/* <Navbar.Brand as={Link} to="/" style={{ marginLeft: "20%" }}> */}
           <img
             src={Logo}
-            style={{ width: "150px" }}
+            style={{ width: "150px", height: "60px" }}
             className="logo img-fluid"
             alt="Logo"
           />
