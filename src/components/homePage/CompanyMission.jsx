@@ -30,7 +30,7 @@ export default function CompanyMission() {
           >
             <img
               src={safeLogo}
-              className="d-block ms-lg-auto ms-md-auto bg-light about-missions-image"
+              className="d-block ms-lg-auto ms-md-auto about-missions-image"
               alt="company logo"
               data-aos="fade-right"
               // width={250}
