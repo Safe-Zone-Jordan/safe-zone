@@ -85,8 +85,9 @@ export default function NavBar() {
             </button>
           )}
         </Nav.Link>
+        <Navbar.Brand as={Link} to="/" style={{ marginLeft: windowSize.innerWidth > 1292 ? "45%" :"20%" }}>
 
-        <Navbar.Brand as={Link} to="/" style={{ marginLeft: "20%" }}>
+        {/* <Navbar.Brand as={Link} to="/" style={{ marginLeft: "20%" }}> */}
           <img
             src={Logo}
             style={{ width: "150px" }}

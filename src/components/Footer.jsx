@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import whiteSZ from "../assets/images/SZ-White2.png";
 const aTagStyle = {
   textDecoration: "none",
 };
@@ -15,12 +16,19 @@ export default function Footer() {
         style={{ padding: windowSize.innerWidth < 768 ? "0px 10%" : "0px" }}
       >
         <div className="row">
-          <div className="col-lg-4 col-12 mb-4">
-            <h1 className="text-logo">
+          <div className="col-lg-4 col-12 mb-4 d-flex flex-column align-items-center justify-items-center">
+            <img
+              src={whiteSZ}
+              height={150}
+              className={`${
+                windowSize.innerWidth < 768 ? "w-75" : windowSize.innerWidth < 992 ? "w-50"  :"w-75"
+              } mb-2`}
+              alt="ssss"
+            />
+            {/* <h1 className="text-logo">
               Safe Zone<sup className="text-logo-span">&reg;</sup>
             </h1>
-            <h2 className="sup-text-logo">For Engineering & Trading Co.</h2>
-
+            <h2 className="sup-text-logo">For Engineering & Trading Co.</h2> */}
             <br />
             <p
               className="text-white d-flex mb-2"

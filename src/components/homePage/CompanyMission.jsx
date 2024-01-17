@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import safeZone from "../../assets/images/icons/safeZone.png";
+// import safeZone from "../../assets/images/icons/safeZone.png";
 import safeLogo from "../../assets/images/newSafeLogo.png";
 
 function getWindowSize() {
@@ -24,17 +24,21 @@ export default function CompanyMission() {
     <section className=" about-main-section">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-5 col-12">
+          <div
+            className="col-lg-4 col-md-5 col-12"
+            style={{ marginTop:  windowSize.innerWidth > 768 ? "-5%":"" }}
+          >
             <img
-              src={safeZone}
-              className="about-image ms-lg-auto ms-md-auto bg-light shadow-lg about-missions-image"
+              src={safeLogo}
+              className="d-block ms-lg-auto ms-md-auto bg-light about-missions-image"
               alt="company logo"
               data-aos="fade-right"
+              // width={250}
             />
           </div>
           <div className="col-lg-8 col-md-7 col-12">
             <div className="custom-text-block">
-              <div className="text-muted mb-lg-4 mb-md-4 text-center">
+              {/* <div className="text-muted mb-lg-4 mb-md-4 text-center">
                 <img
                   src={safeLogo}
                   style={{ width: "255px" }}
@@ -42,7 +46,7 @@ export default function CompanyMission() {
                   alt="Logo"
                   data-aos="fade-in"
                 />
-              </div>
+              </div> */}
               <p
                 data-aos={`${
                   windowSize.innerWidth < 768 ? "fade-right" : "fade-left"
