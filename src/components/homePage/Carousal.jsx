@@ -22,7 +22,7 @@ export default function Carousal() {
               alt="First slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation carousalText">Audio/Visual Systems</h1>
+              <h1 className="text-animation carousalText font-primary">Audio/Visual Systems</h1>
               <p className="sup-text-animation carousalText">
               Build Your System
               </p>
@@ -35,7 +35,7 @@ export default function Carousal() {
               alt="Second slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation carousalText">Security Systems</h1>
+              <h1 className="text-animation carousalText font-primary">Security Systems</h1>
               <p className="sup-text-animation carousalText">Customize your System</p>
             </div>
           </Carousel.Item>
@@ -46,7 +46,7 @@ export default function Carousal() {
               alt="Third slide"
             />
             <div className="carousel-caption d-flex flex-column justify-content-end">
-              <h1 className="text-animation carousalText">Entrance Solutions</h1>
+              <h1 className="text-animation carousalText font-primary">Entrance Solutions</h1>
               <p className="sup-text-animation carousalText">
               Maintain Your System
               </p>

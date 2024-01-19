@@ -34,7 +34,7 @@ export default function PrefCard() {
             style={{ paddingBottom: "50px" }}
             className="col-12  text-center"
           >
-            <h2 data-aos="fade-in">Our Solutions</h2>
+            <h2 data-aos="fade-in" className="font-primary fw-bold">Our Solutions</h2>
           </div>
 
           {data.map((item, index) => {
@@ -55,7 +55,7 @@ export default function PrefCard() {
                     <div className="col-12 col-md-6 mb-5">
                       <div className="steps__content-width">
                         <h1
-                          className="h2 mb-4 home-page-solutions-headers"
+                          className="h2 mb-4 home-page-solutions-headers font-primary fw-bolder"
                           data-aos={`${
                             windowSize.innerWidth < 768
                               ? "fade-right"
@@ -130,7 +130,7 @@ export default function PrefCard() {
                     <div className="col-12 col-md-6 mb-5">
                       <div className="steps__content-width">
                         <h1
-                          className="h2 mb-4 home-page-solutions-headers"
+                          className="h2 mb-4 home-page-solutions-headers font-primary fw-bolder"
                           data-aos="fade-right"
                         >
                           {item.name}

@@ -17,7 +17,7 @@ export default function Partners() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="text-center" data-aos="fade-in">
+            <h2 className="text-center font-primary fw-bold" data-aos="fade-in">
               Our Partners
             </h2>
           </div>

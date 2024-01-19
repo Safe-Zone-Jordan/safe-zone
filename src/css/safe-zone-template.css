@@ -32,6 +32,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Bordeaux Light";
+  src: url("../fonts/Bordeaux-Light-Regular/Bordeaux-Light-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )       
 -----------------------------------------*/
@@ -73,7 +81,11 @@
 body {
   background-color: var(--white-color);
   /* font-family: var(--body-font-family); */
-  font-family: "MyriadPro", sans-serif !important;
+  font-family: "MyriadPro", 'Times New Roman', Times, serif;
+}
+
+.font-primary {
+  font-family: "Bordeaux Light", sans-serif !important;
 }
 
 /*---------------------------------------
@@ -135,7 +147,7 @@ p {
 }
 
 ul li {
-  color: var(--p-color);
+  /* color: var(--p-color); */
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
 }

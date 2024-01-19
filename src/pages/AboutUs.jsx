@@ -7,7 +7,7 @@ export default function AboutUs() {
   return (
     <section className="section-padding" id="section_3" data-aos="fade-in">
       <header className="pt-10 text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto">
-        <h2 className="text-center">About Us</h2>
+        <h2 className="text-center font-primary">About Us</h2>
         <p className="text-muted lead mb-0">
           Launched in 2018, Safe Zone is a leading Low Current System company in
           Jordan
@@ -42,7 +42,7 @@ export default function AboutUs() {
             <p className="mb-3 small fw-bolder tracking-wider text-uppercase home-page-solutions-headers">
               How it started
             </p>
-            <h2 className="display-5 fw-bold mb-6">Our story</h2>
+            <h2 className="display-5 fw-bold mb-6 font-primary">Our story</h2>
             <p>
               With more than 6 years of experienced, Safe Zone has built a wide
               reputation of Low Current system professional work. Safe Zone

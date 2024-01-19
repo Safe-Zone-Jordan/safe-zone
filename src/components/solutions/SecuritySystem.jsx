@@ -15,7 +15,7 @@ export default function SecuritySystem() {
       <div className="container">
         <div className="py-6 row gx-8 align-items-center">
           <div className="col-12 mb-5">
-            <h2 className="text-center">{data.name}</h2>
+            <h2 className="text-center font-primary fw-bold">{data.name}</h2>
           </div>
           <div className="col-12 order-lg-1 order-2 col-lg-6">
             {data.paragraph.split("\n").map((str, idx) => (

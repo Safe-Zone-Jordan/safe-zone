@@ -17,7 +17,7 @@ export default function Partners() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="text-center">Our Partners</h2>
+            <h2 className="text-center font-primary fw-bold">Our Partners</h2>
             <p className="mx-5 pb-3">
               Safe Zone believes that our people are integral to our success and
               we are committed to their well-being. We develop talent giving
