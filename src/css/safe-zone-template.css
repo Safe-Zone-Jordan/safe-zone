@@ -85,7 +85,7 @@ body {
 }
 
 .font-primary {
-  font-family: "Bordeaux Light", sans-serif !important;
+  font-family: "Bordeaux Light", 'Times New Roman', Times, serif !important;
 }
 
 /*---------------------------------------
