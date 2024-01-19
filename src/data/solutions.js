@@ -54,6 +54,8 @@ const audioVideo = {
     "Screens & Video Wall System.",
     "Home and Cinema Sound Systems.",
     "Digital Signage System.",
+    "AV Control System",
+    "Audio / Video Intercom",
   ],
   pictures: [
     {
